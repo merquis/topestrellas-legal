@@ -34,22 +34,26 @@
         p { margin-bottom: 1rem; }
         ul, ol { margin-bottom: 1rem; padding-left: 1.5rem; }
         li { margin-bottom: 0.4rem; }
-        table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.85rem; overflow-x: auto; display: block; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.85rem; display: table; }
         thead { background: var(--navy); color: var(--white); }
-        thead th { font-family: 'DM Sans', sans-serif; font-weight: 600; padding: 0.7rem 0.6rem; text-align: left; white-space: nowrap; }
+        thead th { font-family: 'DM Sans', sans-serif; font-weight: 600; padding: 0.7rem 0.6rem; text-align: left; }
         tbody td { padding: 0.6rem; border-bottom: 1px solid var(--border); vertical-align: top; }
         tbody tr:nth-child(even) { background: var(--section-bg); }
         a { color: var(--navy-light); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 2px; }
         a:hover { color: var(--gold); }
         .legal-footer { background: var(--dark); color: #8888a0; text-align: center; padding: 1.5rem 2rem; font-family: 'DM Sans', sans-serif; font-size: 0.82rem; line-height: 1.6; }
         .legal-footer strong { color: var(--gold); }
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             .legal-header h1 { font-size: 1.4rem; }
-            .container { padding: 1.5rem 1.2rem 3rem; }
+            .container { padding: 1.5rem 1rem 3rem; }
             .version-bar { flex-direction: column; gap: 0.3rem; text-align: center; }
             .toc ol { columns: 1; }
-            table { font-size: 0.72rem; }
-            thead th, tbody td { padding: 0.35rem; }
+            .data-card strong { display: block; min-width: auto; }
+            table, thead, tbody, th, td, tr { display: block; }
+            thead { display: none; }
+            tbody tr { margin-bottom: 1rem; border: 1px solid var(--border); border-left: 4px solid var(--navy); border-radius: 6px; padding: 0.8rem; background: var(--white); }
+            tbody td { padding: 0.4rem 0; border: none; font-size: 0.85rem; }
+            tbody td::before { content: attr(data-label); display: block; font-family: 'DM Sans', sans-serif; font-weight: 700; color: var(--navy); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.2rem; }
         }
     </style>
 </head>
@@ -113,49 +117,49 @@
 </thead>
 <tbody>
 <tr>
-<td>Prestación del servicio contratado</td>
-<td>Art. 6.1.b — Ejecución del contrato</td>
-<td>Gestión de la cuenta, acceso a la Plataforma, prestación de los módulos contratados, soporte técnico, facturación y cobro.</td>
+<td data-label="Finalidad">Prestación del servicio contratado</td>
+<td data-label="Base legal (RGPD)">Art. 6.1.b — Ejecución del contrato</td>
+<td data-label="Descripción">Gestión de la cuenta, acceso a la Plataforma, prestación de los módulos contratados, soporte técnico, facturación y cobro.</td>
 </tr>
 <tr>
-<td>Comunicaciones operativas</td>
-<td>Art. 6.1.b — Ejecución del contrato</td>
-<td>Envío de notificaciones relativas al servicio: confirmaciones de pago, cambios en el servicio, incidencias técnicas, renovaciones, modificaciones de los T&amp;C.</td>
+<td data-label="Finalidad">Comunicaciones operativas</td>
+<td data-label="Base legal (RGPD)">Art. 6.1.b — Ejecución del contrato</td>
+<td data-label="Descripción">Envío de notificaciones relativas al servicio: confirmaciones de pago, cambios en el servicio, incidencias técnicas, renovaciones, modificaciones de los T&amp;C.</td>
 </tr>
 <tr>
-<td>Comunicaciones comerciales propias</td>
-<td>Art. 6.1.a — Consentimiento expreso</td>
-<td>Envío de ofertas, novedades, nuevos módulos y contenido promocional de TopEstrellas. Solo si el Cliente ha otorgado su consentimiento.</td>
+<td data-label="Finalidad">Comunicaciones comerciales propias</td>
+<td data-label="Base legal (RGPD)">Art. 6.1.a — Consentimiento expreso</td>
+<td data-label="Descripción">Envío de ofertas, novedades, nuevos módulos y contenido promocional de TopEstrellas. Solo si el Cliente ha otorgado su consentimiento.</td>
 </tr>
 <tr>
-<td>Comunicaciones comerciales de terceros</td>
-<td>Art. 6.1.a — Consentimiento expreso</td>
-<td>Envío de ofertas de partners o colaboradores de TopEstrellas relacionados con el sector del Cliente. Solo si el Cliente ha otorgado su consentimiento.</td>
+<td data-label="Finalidad">Comunicaciones comerciales de terceros</td>
+<td data-label="Base legal (RGPD)">Art. 6.1.a — Consentimiento expreso</td>
+<td data-label="Descripción">Envío de ofertas de partners o colaboradores de TopEstrellas relacionados con el sector del Cliente. Solo si el Cliente ha otorgado su consentimiento.</td>
 </tr>
 <tr>
-<td>Cumplimiento de obligaciones legales</td>
-<td>Art. 6.1.c — Obligación legal</td>
-<td>Conservación de datos de facturación conforme a la normativa fiscal y mercantil española (Ley General Tributaria, Código de Comercio).</td>
+<td data-label="Finalidad">Cumplimiento de obligaciones legales</td>
+<td data-label="Base legal (RGPD)">Art. 6.1.c — Obligación legal</td>
+<td data-label="Descripción">Conservación de datos de facturación conforme a la normativa fiscal y mercantil española (Ley General Tributaria, Código de Comercio).</td>
 </tr>
 <tr>
-<td>Mejora del servicio y análisis</td>
-<td>Art. 6.1.f — Interés legítimo</td>
-<td>Análisis de uso de la Plataforma, estadísticas agregadas, identificación de problemas técnicos y mejora de funcionalidades. El interés legítimo de TopEstrellas en mejorar su servicio prevalece sobre el impacto mínimo en la privacidad del Cliente, al tratarse de datos de uso anonimizados o agregados.</td>
+<td data-label="Finalidad">Mejora del servicio y análisis</td>
+<td data-label="Base legal (RGPD)">Art. 6.1.f — Interés legítimo</td>
+<td data-label="Descripción">Análisis de uso de la Plataforma, estadísticas agregadas, identificación de problemas técnicos y mejora de funcionalidades. El interés legítimo de TopEstrellas en mejorar su servicio prevalece sobre el impacto mínimo en la privacidad del Cliente, al tratarse de datos de uso anonimizados o agregados.</td>
 </tr>
 <tr>
-<td>Seguridad y prevención de fraude</td>
-<td>Art. 6.1.f — Interés legítimo</td>
-<td>Detección de accesos no autorizados, prevención de abuso, protección de la infraestructura compartida.</td>
+<td data-label="Finalidad">Seguridad y prevención de fraude</td>
+<td data-label="Base legal (RGPD)">Art. 6.1.f — Interés legítimo</td>
+<td data-label="Descripción">Detección de accesos no autorizados, prevención de abuso, protección de la infraestructura compartida.</td>
 </tr>
 <tr>
-<td>Referencia comercial</td>
-<td>Art. 6.1.f — Interés legítimo</td>
-<td>Uso del nombre y logotipo del negocio del Cliente como referencia comercial en materiales de marketing de TopEstrellas, salvo oposición expresa del Cliente.</td>
+<td data-label="Finalidad">Referencia comercial</td>
+<td data-label="Base legal (RGPD)">Art. 6.1.f — Interés legítimo</td>
+<td data-label="Descripción">Uso del nombre y logotipo del negocio del Cliente como referencia comercial en materiales de marketing de TopEstrellas, salvo oposición expresa del Cliente.</td>
 </tr>
 <tr>
-<td>Generación de demos comerciales</td>
-<td>Art. 6.1.f — Interés legítimo</td>
-<td>Uso de datos públicos del negocio para la generación de demostraciones personalizadas previas a la contratación.</td>
+<td data-label="Finalidad">Generación de demos comerciales</td>
+<td data-label="Base legal (RGPD)">Art. 6.1.f — Interés legítimo</td>
+<td data-label="Descripción">Uso de datos públicos del negocio para la generación de demostraciones personalizadas previas a la contratación.</td>
 </tr>
 </tbody>
 </table>
@@ -170,49 +174,49 @@
 </thead>
 <tbody>
 <tr>
-<td>Datos de la cuenta activa</td>
-<td>Mientras dure la suscripción</td>
-<td>Ejecución del contrato</td>
+<td data-label="Tipo de datos">Datos de la cuenta activa</td>
+<td data-label="Plazo de conservación">Mientras dure la suscripción</td>
+<td data-label="Base">Ejecución del contrato</td>
 </tr>
 <tr>
-<td>Datos tras cancelación</td>
-<td>Bloqueados durante los plazos legales</td>
-<td>Obligación legal</td>
+<td data-label="Tipo de datos">Datos tras cancelación</td>
+<td data-label="Plazo de conservación">Bloqueados durante los plazos legales</td>
+<td data-label="Base">Obligación legal</td>
 </tr>
 <tr>
-<td>Datos de facturación</td>
-<td>6 años desde el último asiento contable</td>
-<td>Art. 30 Código de Comercio</td>
+<td data-label="Tipo de datos">Datos de facturación</td>
+<td data-label="Plazo de conservación">6 años desde el último asiento contable</td>
+<td data-label="Base">Art. 30 Código de Comercio</td>
 </tr>
 <tr>
-<td>Datos fiscales</td>
-<td>4 años</td>
-<td>Art. 66 Ley General Tributaria</td>
+<td data-label="Tipo de datos">Datos fiscales</td>
+<td data-label="Plazo de conservación">4 años</td>
+<td data-label="Base">Art. 66 Ley General Tributaria</td>
 </tr>
 <tr>
-<td>Datos para reclamaciones civiles</td>
-<td>3 años tras la terminación</td>
-<td>Art. 1964 Código Civil</td>
+<td data-label="Tipo de datos">Datos para reclamaciones civiles</td>
+<td data-label="Plazo de conservación">3 años tras la terminación</td>
+<td data-label="Base">Art. 1964 Código Civil</td>
 </tr>
 <tr>
-<td>Registros de actividad (logs)</td>
-<td>12 meses</td>
-<td>Interés legítimo + seguridad</td>
+<td data-label="Tipo de datos">Registros de actividad (logs)</td>
+<td data-label="Plazo de conservación">12 meses</td>
+<td data-label="Base">Interés legítimo + seguridad</td>
 </tr>
 <tr>
-<td>Datos de consentimiento (T&amp;C, checkboxes)</td>
-<td>Mientras sean necesarios como prueba + plazos legales</td>
-<td>Obligación legal + interés legítimo</td>
+<td data-label="Tipo de datos">Datos de consentimiento (T&amp;C, checkboxes)</td>
+<td data-label="Plazo de conservación">Mientras sean necesarios como prueba + plazos legales</td>
+<td data-label="Base">Obligación legal + interés legítimo</td>
 </tr>
 <tr>
-<td>Comunicaciones de soporte</td>
-<td>2 años tras la resolución</td>
-<td>Interés legítimo</td>
+<td data-label="Tipo de datos">Comunicaciones de soporte</td>
+<td data-label="Plazo de conservación">2 años tras la resolución</td>
+<td data-label="Base">Interés legítimo</td>
 </tr>
 <tr>
-<td>Datos de newsletters</td>
-<td>Hasta revocación del consentimiento</td>
-<td>Consentimiento</td>
+<td data-label="Tipo de datos">Datos de newsletters</td>
+<td data-label="Plazo de conservación">Hasta revocación del consentimiento</td>
+<td data-label="Base">Consentimiento</td>
 </tr>
 </tbody>
 </table>
@@ -232,74 +236,74 @@
 </thead>
 <tbody>
 <tr>
-<td>Stripe, Inc.</td>
-<td>Procesamiento de pagos</td>
-<td>Datos de facturación, email</td>
-<td>EE.UU.</td>
-<td>DPF (UE-EE.UU.)</td>
+<td data-label="Proveedor">Stripe, Inc.</td>
+<td data-label="Servicio">Procesamiento de pagos</td>
+<td data-label="Datos compartidos">Datos de facturación, email</td>
+<td data-label="Ubicación">EE.UU.</td>
+<td data-label="Garantía">DPF (UE-EE.UU.)</td>
 </tr>
 <tr>
-<td>PayPal Holdings, Inc.</td>
-<td>Procesamiento de pagos</td>
-<td>Datos de facturación, email</td>
-<td>EE.UU.</td>
-<td>DPF (UE-EE.UU.)</td>
+<td data-label="Proveedor">PayPal Holdings, Inc.</td>
+<td data-label="Servicio">Procesamiento de pagos</td>
+<td data-label="Datos compartidos">Datos de facturación, email</td>
+<td data-label="Ubicación">EE.UU.</td>
+<td data-label="Garantía">DPF (UE-EE.UU.)</td>
 </tr>
 <tr>
-<td>MongoDB, Inc. (Atlas)</td>
-<td>Base de datos en la nube</td>
-<td>Todos los datos de la cuenta</td>
-<td>UE (Irlanda)</td>
-<td>Dentro del EEE</td>
+<td data-label="Proveedor">MongoDB, Inc. (Atlas)</td>
+<td data-label="Servicio">Base de datos en la nube</td>
+<td data-label="Datos compartidos">Todos los datos de la cuenta</td>
+<td data-label="Ubicación">UE (Irlanda)</td>
+<td data-label="Garantía">Dentro del EEE</td>
 </tr>
 <tr>
-<td>Hetzner Online GmbH</td>
-<td>Servidores de aplicación</td>
-<td>Datos en tránsito y procesamiento</td>
-<td>UE (Alemania)</td>
-<td>Dentro del EEE</td>
+<td data-label="Proveedor">Hetzner Online GmbH</td>
+<td data-label="Servicio">Servidores de aplicación</td>
+<td data-label="Datos compartidos">Datos en tránsito y procesamiento</td>
+<td data-label="Ubicación">UE (Alemania)</td>
+<td data-label="Garantía">Dentro del EEE</td>
 </tr>
 <tr>
-<td>Cloudflare, Inc.</td>
-<td>CDN, almacenamiento R2, seguridad</td>
-<td>Datos en tránsito, imágenes</td>
-<td>EE.UU./Global</td>
-<td>DPF (UE-EE.UU.)</td>
+<td data-label="Proveedor">Cloudflare, Inc.</td>
+<td data-label="Servicio">CDN, almacenamiento R2, seguridad</td>
+<td data-label="Datos compartidos">Datos en tránsito, imágenes</td>
+<td data-label="Ubicación">EE.UU./Global</td>
+<td data-label="Garantía">DPF (UE-EE.UU.)</td>
 </tr>
 <tr>
-<td>Amazon Web Services (SES)</td>
-<td>Envío de emails transaccionales</td>
-<td>Email del Cliente, contenido del email</td>
-<td>UE (Irlanda)</td>
-<td>Dentro del EEE</td>
+<td data-label="Proveedor">Amazon Web Services (SES)</td>
+<td data-label="Servicio">Envío de emails transaccionales</td>
+<td data-label="Datos compartidos">Email del Cliente, contenido del email</td>
+<td data-label="Ubicación">UE (Irlanda)</td>
+<td data-label="Garantía">Dentro del EEE</td>
 </tr>
 <tr>
-<td>Google LLC (Gemini API)</td>
-<td>Generación de contenido IA</td>
-<td>Textos enviados para procesamiento</td>
-<td>EE.UU.</td>
-<td>DPF (UE-EE.UU.)</td>
+<td data-label="Proveedor">Google LLC (Gemini API)</td>
+<td data-label="Servicio">Generación de contenido IA</td>
+<td data-label="Datos compartidos">Textos enviados para procesamiento</td>
+<td data-label="Ubicación">EE.UU.</td>
+<td data-label="Garantía">DPF (UE-EE.UU.)</td>
 </tr>
 <tr>
-<td>OpenAI, LLC</td>
-<td>Generación de contenido IA</td>
-<td>Textos enviados para procesamiento</td>
-<td>EE.UU.</td>
-<td>DPF (UE-EE.UU.)</td>
+<td data-label="Proveedor">OpenAI, LLC</td>
+<td data-label="Servicio">Generación de contenido IA</td>
+<td data-label="Datos compartidos">Textos enviados para procesamiento</td>
+<td data-label="Ubicación">EE.UU.</td>
+<td data-label="Garantía">DPF (UE-EE.UU.)</td>
 </tr>
 <tr>
-<td>Deepgram, Inc.</td>
-<td>Transcripción de audio</td>
-<td>Audio enviado para procesamiento</td>
-<td>EE.UU.</td>
-<td>SCCs (Cláusulas Tipo)</td>
+<td data-label="Proveedor">Deepgram, Inc.</td>
+<td data-label="Servicio">Transcripción de audio</td>
+<td data-label="Datos compartidos">Audio enviado para procesamiento</td>
+<td data-label="Ubicación">EE.UU.</td>
+<td data-label="Garantía">SCCs (Cláusulas Tipo)</td>
 </tr>
 <tr>
-<td>Google LLC (Analytics)</td>
-<td>Analítica web</td>
-<td>Datos de navegación anonimizados</td>
-<td>EE.UU.</td>
-<td>DPF (UE-EE.UU.)</td>
+<td data-label="Proveedor">Google LLC (Analytics)</td>
+<td data-label="Servicio">Analítica web</td>
+<td data-label="Datos compartidos">Datos de navegación anonimizados</td>
+<td data-label="Ubicación">EE.UU.</td>
+<td data-label="Garantía">DPF (UE-EE.UU.)</td>
 </tr>
 </tbody>
 </table>

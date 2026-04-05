@@ -202,6 +202,7 @@
             border-collapse: collapse;
             margin: 1rem 0 1.5rem;
             font-size: 0.88rem;
+            display: table;
         }
 
         thead {
@@ -255,13 +256,17 @@
             color: var(--gold);
         }
 
-        @media (max-width: 600px) {
-            .legal-header h1 { font-size: 1.5rem; }
-            .container { padding: 1.5rem 1.2rem 3rem; }
+        @media (max-width: 768px) {
+            .legal-header h1 { font-size: 1.4rem; }
+            .container { padding: 1.5rem 1rem 3rem; }
             .version-bar { flex-direction: column; gap: 0.3rem; text-align: center; }
+            .toc ol { columns: 1; }
             .data-card strong { display: block; min-width: auto; }
-            table { font-size: 0.78rem; }
-            thead th, tbody td { padding: 0.5rem; }
+            table, thead, tbody, th, td, tr { display: block; }
+            thead { display: none; }
+            tbody tr { margin-bottom: 1rem; border: 1px solid var(--border); border-left: 4px solid var(--navy); border-radius: 6px; padding: 0.8rem; background: var(--white); }
+            tbody td { padding: 0.4rem 0; border: none; font-size: 0.85rem; }
+            tbody td::before { content: attr(data-label); display: block; font-family: 'DM Sans', sans-serif; font-weight: 700; color: var(--navy); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.2rem; }
         }
     </style>
 </head>
@@ -493,46 +498,46 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Stripe, Inc.</td>
-                    <td>EE.UU.</td>
-                    <td>Procesamiento de pagos</td>
-                    <td>DPF (UE-EE.UU.)</td>
+                    <td data-label="Proveedor">Stripe, Inc.</td>
+                    <td data-label="Ubicación">EE.UU.</td>
+                    <td data-label="Servicio">Procesamiento de pagos</td>
+                    <td data-label="Garantía">DPF (UE-EE.UU.)</td>
                 </tr>
                 <tr>
-                    <td>PayPal Holdings, Inc.</td>
-                    <td>EE.UU.</td>
-                    <td>Procesamiento de pagos</td>
-                    <td>DPF (UE-EE.UU.)</td>
+                    <td data-label="Proveedor">PayPal Holdings, Inc.</td>
+                    <td data-label="Ubicación">EE.UU.</td>
+                    <td data-label="Servicio">Procesamiento de pagos</td>
+                    <td data-label="Garantía">DPF (UE-EE.UU.)</td>
                 </tr>
                 <tr>
-                    <td>OpenAI, LLC</td>
-                    <td>EE.UU.</td>
-                    <td>Modelos de lenguaje IA</td>
-                    <td>DPF (UE-EE.UU.)</td>
+                    <td data-label="Proveedor">OpenAI, LLC</td>
+                    <td data-label="Ubicación">EE.UU.</td>
+                    <td data-label="Servicio">Modelos de lenguaje IA</td>
+                    <td data-label="Garantía">DPF (UE-EE.UU.)</td>
                 </tr>
                 <tr>
-                    <td>Deepgram, Inc.</td>
-                    <td>EE.UU.</td>
-                    <td>Procesamiento de audio</td>
-                    <td>SCCs (Cláusulas Tipo)</td>
+                    <td data-label="Proveedor">Deepgram, Inc.</td>
+                    <td data-label="Ubicación">EE.UU.</td>
+                    <td data-label="Servicio">Procesamiento de audio</td>
+                    <td data-label="Garantía">SCCs (Cláusulas Tipo)</td>
                 </tr>
                 <tr>
-                    <td>Google LLC</td>
-                    <td>EE.UU.</td>
-                    <td>APIs de IA y Analytics</td>
-                    <td>DPF (UE-EE.UU.)</td>
+                    <td data-label="Proveedor">Google LLC</td>
+                    <td data-label="Ubicación">EE.UU.</td>
+                    <td data-label="Servicio">APIs de IA y Analytics</td>
+                    <td data-label="Garantía">DPF (UE-EE.UU.)</td>
                 </tr>
                 <tr>
-                    <td>Amazon Web Services</td>
-                    <td>UE / Global</td>
-                    <td>Email (SES) y almacenamiento</td>
-                    <td>Dentro EEE / DPF</td>
+                    <td data-label="Proveedor">Amazon Web Services</td>
+                    <td data-label="Ubicación">UE / Global</td>
+                    <td data-label="Servicio">Email (SES) y almacenamiento</td>
+                    <td data-label="Garantía">Dentro EEE / DPF</td>
                 </tr>
                 <tr>
-                    <td>Cloudflare, Inc.</td>
-                    <td>EE.UU. / Global</td>
-                    <td>Almacenamiento (R2) y CDN</td>
-                    <td>DPF (UE-EE.UU.)</td>
+                    <td data-label="Proveedor">Cloudflare, Inc.</td>
+                    <td data-label="Ubicación">EE.UU. / Global</td>
+                    <td data-label="Servicio">Almacenamiento (R2) y CDN</td>
+                    <td data-label="Garantía">DPF (UE-EE.UU.)</td>
                 </tr>
             </tbody>
         </table>
