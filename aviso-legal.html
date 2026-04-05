@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Aviso Legal de TopEstrellas — Plataforma SaaS de digitalización para negocios locales">
+    <title>Aviso Legal — TopEstrellas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+        :root {
+            --navy: #1B2A6B;
+            --navy-light: #2a3d8f;
+            --gold: #F5A623;
+            --gold-light: #fdf4e3;
+            --white: #FFFFFF;
+            --dark: #1A1A2E;
+            --text: #2d2d3a;
+            --text-light: #5a5a6e;
+            --bg: #fafafa;
+            --border: #e2e2e8;
+            --section-bg: #f5f5f8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 16px;
+            line-height: 1.75;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        .legal-header {
+            background: var(--navy);
+            color: var(--white);
+            padding: 3rem 2rem 2.5rem;
+            text-align: center;
+        }
+
+        .legal-header h1 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-header .subtitle {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            color: var(--gold);
+            font-weight: 500;
+        }
+
+        .version-bar {
+            background: var(--dark);
+            color: var(--text-light);
+            font-family: 'DM Sans', monospace;
+            font-size: 0.78rem;
+            padding: 0.6rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .version-bar span {
+            color: #b0b0c0;
+        }
+
+        .version-bar strong {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.5rem 2rem 4rem;
+        }
+
+        .intro-text {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+        }
+
+        h2::before {
+            display: none;
+        }
+
+        .section {
+            margin-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--navy-light);
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        .data-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--navy);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1rem 0 1.5rem;
+        }
+
+        .data-card p {
+            margin-bottom: 0.35rem;
+            font-size: 0.93rem;
+        }
+
+        .data-card strong {
+            color: var(--navy);
+            font-weight: 600;
+            min-width: 180px;
+            display: inline-block;
+        }
+
+        .warning-box {
+            background: #fff8ed;
+            border: 1px solid var(--gold);
+            border-left: 4px solid var(--gold);
+            border-radius: 6px;
+            padding: 1.2rem 1.5rem;
+            margin: 1.2rem 0;
+            font-size: 0.93rem;
+        }
+
+        .warning-box strong {
+            color: #b8860b;
+        }
+
+        .danger-box {
+            background: #fef2f2;
+            border: 1px solid #e8a0a0;
+            border-left: 4px solid #d32f2f;
+            border-radius: 6px;
+            padding: 1.2rem 1.5rem;
+            margin: 1.2rem 0;
+            font-size: 0.93rem;
+        }
+
+        .danger-box strong {
+            color: #c62828;
+        }
+
+        .clause {
+            margin-left: 0.5rem;
+            padding-left: 1rem;
+            border-left: 2px solid var(--border);
+            margin-bottom: 0.8rem;
+        }
+
+        .clause p {
+            margin-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem;
+            font-size: 0.88rem;
+        }
+
+        thead {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        thead th {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            padding: 0.7rem 0.8rem;
+            text-align: left;
+        }
+
+        tbody td {
+            padding: 0.6rem 0.8rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tbody tr:nth-child(even) {
+            background: var(--section-bg);
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        a {
+            color: var(--navy-light);
+            text-decoration: underline;
+            text-decoration-color: var(--gold);
+            text-underline-offset: 2px;
+        }
+
+        a:hover {
+            color: var(--gold);
+        }
+
+        .legal-footer {
+            background: var(--dark);
+            color: #8888a0;
+            text-align: center;
+            padding: 1.5rem 2rem;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.82rem;
+            line-height: 1.6;
+        }
+
+        .legal-footer strong {
+            color: var(--gold);
+        }
+
+        @media (max-width: 600px) {
+            .legal-header h1 { font-size: 1.5rem; }
+            .container { padding: 1.5rem 1.2rem 3rem; }
+            .version-bar { flex-direction: column; gap: 0.3rem; text-align: center; }
+            .data-card strong { display: block; min-width: auto; }
+            table { font-size: 0.78rem; }
+            thead th, tbody td { padding: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="legal-header">
+    <h1>Aviso Legal</h1>
+    <p class="subtitle">TopEstrellas — Plataforma SaaS de digitalización</p>
+</header>
+
+<div class="version-bar">
+    <span>Versión: <strong>1.0.0</strong></span>
+    <span>Fecha de publicación: <strong>5 de abril de 2026</strong></span>
+    <span>Fecha de vigencia: <strong>15 de abril de 2026</strong></span>
+    <span>ID documento: <strong>TE-AL-2026-001</strong></span>
+</div>
+
+<main class="container">
+
+    <p class="intro-text">En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se ponen a disposición de los usuarios los siguientes datos y condiciones de uso del presente sitio web.</p>
+
+    <!-- SECCIÓN 1 -->
+    <div class="section">
+        <h2>1. Objeto y naturaleza del servicio</h2>
+        <p>El presente sitio web tiene como finalidad la promoción y comercialización de <strong>TopEstrellas</strong>, una plataforma SaaS (Software as a Service) de digitalización destinada exclusivamente a <strong>clientes profesionales y empresariales (B2B)</strong> del sector de servicios y comercio local.</p>
+        <p>TopEstrellas ofrece a los negocios adheridos las siguientes funcionalidades, entre otras:</p>
+        <ul>
+            <li>Carta digital interactiva con traducción automática multiidioma.</li>
+            <li>Recomendaciones y descripciones enriquecidas mediante inteligencia artificial.</li>
+            <li>Gestión y captación de reseñas (integración con Google Business Profile y TripAdvisor).</li>
+            <li>Pedidos online y gestión de comandas.</li>
+            <li>Sistema de reservas.</li>
+            <li>Comunicaciones y campañas de email marketing.</li>
+            <li>Analíticas de negocio y rendimiento.</li>
+            <li>Sorteos y promociones digitales (rasca y gana, rifas).</li>
+            <li>Programa de afiliados (regido por sus propios términos específicos disponibles en <a href="https://topestrellas.com/afiliados/terminos">topestrellas.com/afiliados/terminos</a> cuando se encuentre operativo).</li>
+        </ul>
+        <p>La contratación de los servicios de TopEstrellas se rige por las <strong>Condiciones Generales de Contratación</strong> disponibles en <a href="https://topestrellas.com/condiciones">topestrellas.com/condiciones</a>.</p>
+    </div>
+
+    <!-- SECCIÓN 2 -->
+    <div class="section">
+        <h2>2. Datos identificativos del titular</h2>
+        <p>En cumplimiento del artículo 10 de la LSSI-CE:</p>
+        <div class="data-card">
+            <p><strong>Titular:</strong> Merquis Jesús Cruz Veloz</p>
+            <p><strong>NIF:</strong> 45983493F</p>
+            <p><strong>Actividad:</strong> Empresario Individual (Autónomo)</p>
+            <p><strong>Nombre comercial:</strong> TopEstrellas</p>
+            <p><strong>Domicilio:</strong> Calle Barchimbre 1, El Fraile, Santa Cruz de Tenerife, Islas Canarias, España</p>
+            <p><strong>Correo electrónico:</strong> <a href="mailto:info@topestrellas.com">info@topestrellas.com</a></p>
+            <p><strong>Teléfono:</strong> +34 633 163 539</p>
+            <p><strong>Sitio web:</strong> <a href="https://topestrellas.com">https://topestrellas.com</a></p>
+            <p><strong>Inscripción:</strong> Inscrito en el Censo de Empresarios, Profesionales y Retenedores de la AEAT.</p>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 3 -->
+    <div class="section">
+        <h2>3. Condiciones de uso</h2>
+        <p>El acceso y uso de este sitio web atribuye la condición de usuario y supone la aceptación plena de todas las condiciones incluidas en este aviso legal, así como en la Política de Privacidad, la Política de Cookies y, en su caso, las Condiciones Generales de Contratación.</p>
+        <p>El usuario se compromete a:</p>
+        <ul>
+            <li>Hacer un uso adecuado de los contenidos y servicios que TopEstrellas ofrece, conforme a la ley, la buena fe y el orden público.</li>
+            <li>No emplear los servicios o contenidos con fines ilícitos, lesivos de derechos de terceros o que de cualquier forma puedan dañar, inutilizar o deteriorar el sitio web o sus servicios, o impedir su normal uso por otros usuarios.</li>
+            <li>No introducir ni difundir contenidos de carácter difamatorio, ofensivo, discriminatorio, violento o que atenten contra la dignidad de las personas.</li>
+            <li>No intentar acceder a áreas restringidas del sitio web o de la plataforma sin autorización, ni realizar ingeniería inversa, descompilación o cualquier intento de obtener el código fuente del software.</li>
+        </ul>
+        <p>TopEstrellas se reserva el derecho de suspender o cancelar el acceso al sitio web o a la plataforma a cualquier usuario que incumpla estas condiciones, sin perjuicio de las acciones legales que pudieran corresponder.</p>
+    </div>
+
+    <!-- SECCIÓN 4 -->
+    <div class="section">
+        <h2>4. Propiedad intelectual e industrial</h2>
+        <p>Todos los contenidos de este sitio web, incluyendo a título enunciativo pero no limitativo, textos, fotografías, gráficos, imágenes, iconos, tecnología, software, algoritmos, bases de datos, enlaces y demás contenidos audiovisuales o sonoros, así como su diseño gráfico, arquitectura de navegación y códigos fuente, son propiedad intelectual de TopEstrellas o de terceros que han autorizado su uso, y están protegidos por las leyes españolas e internacionales de propiedad intelectual e industrial.</p>
+        <p>Queda prohibida la reproducción, distribución, comunicación pública, transformación, descompilación, ingeniería inversa o cualquier otra forma de explotación de los contenidos de este sitio web, total o parcial, sin la autorización expresa y por escrito de TopEstrellas.</p>
+
+        <h3>4.1. Protección de marca y signos distintivos</h3>
+        <p>El nombre comercial <strong>"TopEstrellas"</strong>, los dominios topestrellas.com y localestrella.com, los logotipos, isotipos, combinaciones cromáticas, la paleta de marca y cualquier otro signo distintivo presente en este sitio web son titularidad exclusiva de su propietario.</p>
+        <p>Queda expresamente prohibido, sin autorización previa y por escrito:</p>
+        <div class="clause">
+            <p><strong>(a)</strong> El uso del nombre "TopEstrellas", "LocalEstrella" o cualquier variación, derivación o combinación que pueda inducir a confusión, en dominios web, subdominios, perfiles de redes sociales, cuentas de correo electrónico, aplicaciones, materiales publicitarios, comunicaciones comerciales o cualquier otro soporte, tanto físico como digital.</p>
+            <p><strong>(b)</strong> La reproducción, imitación, modificación o uso de los logotipos, iconos o cualquier elemento visual de la marca, incluyendo adaptaciones que mantengan similitud con los originales.</p>
+            <p><strong>(c)</strong> Cualquier acto que pueda crear confusión, asociación, vinculación o patrocinio no autorizado con TopEstrellas.</p>
+            <p><strong>(d)</strong> La suplantación de identidad o la presentación ante terceros como representante, socio, empleado, distribuidor o afiliado de TopEstrellas sin serlo, o sin contar con autorización vigente y por escrito.</p>
+            <p><strong>(e)</strong> El registro de marcas, nombres comerciales, nombres de dominio o identificadores en redes sociales que contengan "TopEstrellas", "LocalEstrella", "TopEstrella" o variaciones fonética o visualmente similares.</p>
+        </div>
+        <p>TopEstrellas se reserva el derecho de emprender las acciones legales que estime oportunas ante cualquier uso no autorizado de sus signos distintivos, al amparo de la <strong>Ley 17/2001, de 7 de diciembre, de Marcas</strong>, la <strong>Ley 3/1991, de 10 de enero, de Competencia Desleal</strong>, la <strong>Ley 1/2019, de 20 de febrero, de Secretos Empresariales</strong>, el <strong>Real Decreto Legislativo 1/1996, de 12 de abril, por el que se aprueba el texto refundido de la Ley de Propiedad Intelectual</strong> y cualesquiera otras normas aplicables.</p>
+
+        <h3>4.2. Secretos empresariales y código fuente</h3>
+        <p>El código fuente, los algoritmos, la arquitectura técnica, los modelos de datos, los procesos de negocio y el know-how tecnológico de la plataforma TopEstrellas constituyen <strong>secretos empresariales</strong> protegidos conforme a la Ley 1/2019, de 20 de febrero, de Secretos Empresariales. Queda prohibido cualquier intento de acceso, obtención, divulgación o utilización no autorizada de dicha información.</p>
+
+        <h3>4.3. Contenidos subidos por los clientes</h3>
+        <p>Los negocios adheridos a la plataforma retienen la propiedad intelectual sobre los contenidos que suban a la misma (fotografías, logotipos, descripciones de productos, etc.). Al subir dichos contenidos, el cliente otorga a TopEstrellas una licencia no exclusiva, gratuita, mundial y por la duración del contrato, para mostrar, reproducir, adaptar y distribuir dichos contenidos en el marco de la prestación del servicio contratado y de la promoción de la plataforma (incluyendo su uso como referencia comercial en materiales de marketing de TopEstrellas), salvo que el cliente se oponga expresamente y por escrito a este último uso.</p>
+
+        <h3>4.4. Contenidos generados por inteligencia artificial</h3>
+        <p>El cliente tendrá derecho de uso sobre los contenidos generados mediante inteligencia artificial a través de la plataforma (traducciones, descripciones, imágenes), sin perjuicio de las limitaciones que la legislación vigente establezca sobre la protección y titularidad de obras generadas por sistemas de inteligencia artificial. En ningún caso TopEstrellas garantiza que dichos contenidos estén libres de derechos de terceros ni exentos de posibles reclamaciones de propiedad intelectual.</p>
+    </div>
+
+    <!-- SECCIÓN 5 -->
+    <div class="section">
+        <h2>5. Uso de inteligencia artificial</h2>
+
+        <h3>5.1. Transparencia sobre el uso de IA</h3>
+        <p>TopEstrellas utiliza tecnologías de inteligencia artificial de propósito general proporcionadas por terceros para ofrecer diversas funcionalidades de la plataforma. En cumplimiento de las obligaciones de transparencia del <strong>Reglamento (UE) 2024/1689 de Inteligencia Artificial (art. 50)</strong>, se informa de lo siguiente:</p>
+        <p><strong>Proveedores de sistemas de IA utilizados:</strong></p>
+        <ul>
+            <li><strong>Google (Gemini API):</strong> Generación de textos, traducciones automáticas, enriquecimiento de descripciones de productos y generación de imágenes.</li>
+            <li><strong>OpenAI:</strong> Modelos de lenguaje para generación de contenido y recomendaciones.</li>
+            <li><strong>Deepgram:</strong> Procesamiento y transcripción de audio.</li>
+        </ul>
+        <p><strong>Funcionalidades que utilizan IA:</strong></p>
+        <ul>
+            <li>Traducción automática de cartas digitales a múltiples idiomas.</li>
+            <li>Generación y enriquecimiento de descripciones de productos.</li>
+            <li>Sugerencias de alérgenos basadas en la descripción de los productos.</li>
+            <li>Recomendaciones personalizadas para clientes finales (upselling).</li>
+            <li>Chatbot asistente integrado en la plataforma.</li>
+            <li>Generación de imágenes para productos y cartas.</li>
+            <li>Transcripción y procesamiento de audio.</li>
+        </ul>
+
+        <h3>5.2. Carácter orientativo del contenido generado por IA — Exención de responsabilidad</h3>
+        <div class="warning-box">
+            <strong>AVISO IMPORTANTE:</strong> Todos los contenidos generados mediante inteligencia artificial a través de la plataforma TopEstrellas, incluyendo pero no limitado a traducciones, descripciones de productos, sugerencias de alérgenos, recomendaciones e imágenes, tienen carácter <strong>exclusivamente orientativo, asistencial y no vinculante</strong>. La inteligencia artificial es una herramienta de apoyo al cliente, no un sustituto del criterio profesional del titular del negocio.
+        </div>
+        <p>Todos los contenidos generados por IA se presentan al cliente en <strong>modo borrador</strong> antes de su publicación. El cliente tiene la posibilidad y la <strong>obligación</strong> de revisar, corregir, modificar y validar cualquier contenido generado por IA antes de proceder a su publicación. La publicación de cualquier contenido es un acto voluntario y consciente del cliente, que asume la <strong>plena y exclusiva responsabilidad</strong> sobre la exactitud, veracidad, legalidad y adecuación de todo contenido publicado a través de su subdominio en localestrella.com.</p>
+        <p>TopEstrellas <strong>no se hace responsable</strong> de errores, omisiones, inexactitudes, contenido inapropiado, infracciones de propiedad intelectual o cualquier otro defecto en el contenido generado por inteligencia artificial, ni de los daños o perjuicios de cualquier naturaleza que pudieran derivarse del uso de dicho contenido sin la debida verificación y validación por parte del cliente.</p>
+
+        <h3>5.3. Aviso específico sobre alérgenos e información alimentaria</h3>
+        <div class="danger-box">
+            <strong>ADVERTENCIA LEGAL:</strong> Las sugerencias de alérgenos e información nutricional generadas mediante inteligencia artificial son <strong>meramente orientativas</strong> y <strong>no sustituyen en ningún caso</strong> el etiquetado obligatorio ni las obligaciones legales del titular del negocio en materia de seguridad alimentaria.
+        </div>
+        <p>Las sugerencias de alérgenos generadas por IA no sustituyen en ningún caso:</p>
+        <ul>
+            <li>El etiquetado obligatorio conforme al <strong>Reglamento (UE) nº 1169/2011</strong> sobre la información alimentaria facilitada al consumidor.</li>
+            <li>La normativa nacional que lo desarrolla, incluyendo el <strong>Real Decreto 126/2015</strong>, de 27 de febrero, sobre información alimentaria de los alimentos que se presenten sin envasar.</li>
+            <li>Cualquier otra normativa autonómica, nacional o europea aplicable en materia de seguridad alimentaria.</li>
+        </ul>
+        <p>El titular del negocio es el <strong>único y exclusivo responsable</strong> de:</p>
+        <div class="clause">
+            <p><strong>(a)</strong> Verificar, corregir y garantizar la exactitud de la información sobre alérgenos, ingredientes e información nutricional que se muestre en su carta digital.</p>
+            <p><strong>(b)</strong> Cumplir con todas sus obligaciones legales en materia de información alimentaria, con total independencia de las herramientas tecnológicas que utilice.</p>
+            <p><strong>(c)</strong> Mantener actualizada dicha información ante cualquier cambio en los ingredientes, proveedores o procesos de elaboración de sus productos.</p>
+        </div>
+        <p>TopEstrellas <strong>declina toda responsabilidad</strong> derivada de la publicación de información alimentaria incorrecta, incompleta o desactualizada generada por sistemas de inteligencia artificial que no haya sido debidamente verificada por el cliente, así como de cualquier daño a la salud, reacción alérgica o intoxicación que pudiera derivarse de dicha información.</p>
+    </div>
+
+    <!-- SECCIÓN 6 -->
+    <div class="section">
+        <h2>6. Exclusión y limitación de responsabilidad</h2>
+        <p>En la medida máxima permitida por la legislación aplicable, TopEstrellas no será responsable de los daños y perjuicios de toda naturaleza que pudieran derivarse del uso de los servicios o contenidos del sitio web.</p>
+        <p>En particular, TopEstrellas no se responsabiliza de:</p>
+        <ul>
+            <li>La falta de disponibilidad, continuidad o calidad del funcionamiento del sitio web o de la plataforma, sin perjuicio del cumplimiento de los niveles de servicio pactados en las Condiciones Generales de Contratación.</li>
+            <li>Las interrupciones del servicio derivadas de fallos en servicios de terceros proveedores de infraestructura, telecomunicaciones, computación en la nube, procesamiento de pagos, servicios de inteligencia artificial o cualquier otro servicio ajeno al control de TopEstrellas.</li>
+            <li>Los resultados comerciales obtenidos por los negocios mediante el uso de la plataforma. TopEstrellas es una herramienta de digitalización y optimización, y <strong>no garantiza</strong> un número concreto de reseñas, clientes, ventas, visitas ni ningún otro resultado comercial específico.</li>
+            <li>Los contenidos, productos o servicios ofrecidos por los negocios adheridos a través de la plataforma, incluyendo la información nutricional, los alérgenos, los precios, la calidad de los productos o servicios, y el cumplimiento de la normativa aplicable por parte del negocio.</li>
+            <li>Las consecuencias derivadas del uso de las herramientas de gestión de reseñas, traducción automática, inteligencia artificial o cualquier otra funcionalidad por parte de los clientes, incluyendo posibles sanciones, restricciones o suspensiones de cuentas impuestas por plataformas de terceros como Google o TripAdvisor.</li>
+            <li>Los contenidos generados por inteligencia artificial que el cliente publique sin la debida verificación y validación previa.</li>
+            <li>Los daños derivados de ataques informáticos, virus o elementos tecnológicos dañinos introducidos por terceros ajenos a TopEstrellas.</li>
+            <li>El uso que terceros no autorizados puedan hacer de las credenciales de acceso del cliente a la plataforma.</li>
+        </ul>
+        <p><strong>Limitación cuantitativa:</strong> En todo caso, la responsabilidad total acumulada de TopEstrellas frente a un cliente por cualquier causa y en cualquier período no excederá del importe total de las cuotas efectivamente abonadas por dicho cliente durante los doce (12) meses inmediatamente anteriores al evento que dé lugar a la reclamación.</p>
+        <p><strong>Exclusión de la exclusión:</strong> Nada en este aviso legal excluye ni limita la responsabilidad de TopEstrellas por dolo, culpa grave o cualquier responsabilidad que no pueda ser excluida o limitada conforme a la legislación española aplicable.</p>
+
+        <h3>Fuerza mayor</h3>
+        <p>TopEstrellas no será responsable del incumplimiento o retraso en el cumplimiento de sus obligaciones cuando estos se deban a causas de fuerza mayor, incluyendo, a título enunciativo: desastres naturales, emergencias sanitarias declaradas por autoridad competente, huelgas, conflictos bélicos, actos de terrorismo, fallos generalizados de telecomunicaciones o suministro eléctrico, decisiones gubernamentales o administrativas, fallos en servicios de computación en la nube de terceros proveedores, ataques de denegación de servicio u otros ataques informáticos masivos, y cualquier otro supuesto de fuerza mayor reconocido por la jurisprudencia española.</p>
+    </div>
+
+    <!-- SECCIÓN 7 -->
+    <div class="section">
+        <h2>7. Integraciones con servicios de terceros</h2>
+        <p>TopEstrellas se integra con plataformas y servicios de terceros para ofrecer funcionalidades complementarias. El usuario reconoce que:</p>
+        <ul>
+            <li><strong>Google Business Profile:</strong> La integración mediante OAuth 2.0 permite acceder a las reseñas y métricas del perfil de Google del negocio. El uso de esta integración está sujeto a los Términos de Servicio de Google y requiere autorización expresa del titular de la cuenta de Google.</li>
+            <li><strong>TripAdvisor:</strong> La integración permite la consulta de reseñas publicadas en TripAdvisor, sujeta a los términos de uso de dicha plataforma.</li>
+            <li><strong>Stripe y PayPal:</strong> El procesamiento de pagos se realiza a través de pasarelas de pago de terceros. TopEstrellas no almacena datos de tarjetas de crédito o débito. Los datos de pago son tratados directamente por Stripe (Stripe, Inc.) y PayPal (PayPal Holdings, Inc.) conforme a sus respectivas políticas de privacidad y cumpliendo con el estándar PCI-DSS.</li>
+            <li><strong>Servicios de IA (Google, OpenAI, Deepgram):</strong> Los datos procesados por estos servicios están sujetos a sus respectivas políticas de privacidad y condiciones de uso.</li>
+        </ul>
+        <p>TopEstrellas no asume responsabilidad alguna sobre el funcionamiento, disponibilidad, contenido, políticas de privacidad o prácticas de dichas plataformas y servicios de terceros.</p>
+        <p>Este sitio web puede contener enlaces a sitios web de terceros cuyo acceso se realiza bajo la exclusiva responsabilidad del usuario. TopEstrellas no controla ni asume responsabilidad alguna sobre el contenido, disponibilidad o prácticas de dichos sitios.</p>
+    </div>
+
+    <!-- SECCIÓN 8 -->
+    <div class="section">
+        <h2>8. Régimen fiscal</h2>
+        <p>TopEstrellas opera desde las <strong>Islas Canarias</strong>, territorio sujeto al <strong>Impuesto General Indirecto Canario (IGIC)</strong> en lugar del Impuesto sobre el Valor Añadido (IVA).</p>
+        <ul>
+            <li><strong>Precios:</strong> Todos los precios publicados se expresan en euros (€) y <strong>no incluyen IGIC</strong>, salvo que se indique expresamente lo contrario. El IGIC aplicable se mostrará de forma desglosada durante el proceso de contratación y en la factura correspondiente.</li>
+            <li><strong>Clientes en Canarias:</strong> Se aplicará el tipo de IGIC vigente en el momento de la contratación.</li>
+            <li><strong>Clientes en Península y Baleares (España):</strong> La prestación de servicios digitales B2B está <strong>no sujeta a IGIC</strong>. El cliente peninsular deberá aplicar el IVA correspondiente mediante el mecanismo de inversión del sujeto pasivo conforme al artículo 84.Uno.2º de la Ley 37/1992 del IVA.</li>
+            <li><strong>Clientes en la Unión Europea (fuera de España):</strong> La prestación de servicios B2B intracomunitarios está no sujeta a IGIC ni a IVA español. El cliente aplicará el IVA de su país mediante inversión del sujeto pasivo conforme al artículo 196 de la Directiva 2006/112/CE.</li>
+            <li><strong>Clientes fuera de la UE:</strong> Servicios no sujetos a IGIC.</li>
+        </ul>
+        <p><strong>Naturaleza B2B del servicio:</strong> TopEstrellas es un servicio dirigido exclusivamente a profesionales y empresas. No se contempla el derecho de desistimiento previsto en el Real Decreto Legislativo 1/2007, de 16 de noviembre, por el que se aprueba el texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios, al no ser los contratantes consumidores finales sino profesionales que actúan en el ámbito de su actividad empresarial.</p>
+    </div>
+
+    <!-- SECCIÓN 9 -->
+    <div class="section">
+        <h2>9. Protección de datos personales</h2>
+        <p>TopEstrellas trata los datos personales de conformidad con el <strong>Reglamento (UE) 2016/679</strong> del Parlamento Europeo y del Consejo (RGPD), la <strong>Ley Orgánica 3/2018</strong>, de 5 de diciembre, de Protección de Datos Personales y Garantía de los Derechos Digitales (LOPDGDD), y demás normativa vigente en materia de protección de datos.</p>
+
+        <h3>TopEstrellas como responsable del tratamiento</h3>
+        <p>TopEstrellas actúa como <strong>responsable del tratamiento</strong> en dos ámbitos diferenciados:</p>
+        <div class="clause">
+            <p><strong>(a) Datos de consumidores finales:</strong> Los consumidores que se registran, realizan pedidos, reservas o participan en promociones a través de los subdominios de localestrella.com proporcionan sus datos a TopEstrellas, que actúa como responsable del tratamiento de los mismos. Los negocios adheridos tienen acceso a los datos de los consumidores registrados en su subdominio exclusivamente a través de la plataforma y mientras mantengan una suscripción activa. Para más información, consulte la <a href="https://localestrella.com/politica-privacidad">Política de Privacidad para consumidores</a>.</p>
+            <p><strong>(b) Datos de clientes profesionales:</strong> TopEstrellas es responsable del tratamiento de los datos de los profesionales y empresas que contratan sus servicios. Para más información, consulte la <a href="https://topestrellas.com/politica-privacidad">Política de Privacidad</a>.</p>
+        </div>
+
+        <h3>Comunicaciones comerciales electrónicas</h3>
+        <p>De conformidad con el artículo 21 de la LSSI-CE:</p>
+        <ul>
+            <li>TopEstrellas únicamente enviará comunicaciones comerciales electrónicas a aquellos usuarios que hayan otorgado su <strong>consentimiento previo y expreso</strong> para ello, o con quienes mantenga una relación contractual previa para productos o servicios similares.</li>
+            <li>TopEstrellas podrá enviar comunicaciones comerciales <strong>propias</strong>, de <strong>negocios adheridos a la plataforma</strong> y de <strong>terceros colaboradores</strong>, siempre que el usuario haya otorgado su consentimiento expreso para cada ámbito de comunicación.</li>
+            <li>En todo caso, el usuario podrá revocar su consentimiento y darse de baja de las comunicaciones comerciales en cualquier momento mediante el enlace de baja incluido en cada comunicación o desde su perfil en la plataforma.</li>
+        </ul>
+
+        <h3>Transferencias internacionales de datos</h3>
+        <p>Para la prestación del servicio, TopEstrellas utiliza proveedores de servicios ubicados fuera del Espacio Económico Europeo. Las transferencias internacionales de datos se realizan con las siguientes garantías:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Proveedor</th>
+                    <th>Ubicación</th>
+                    <th>Servicio</th>
+                    <th>Garantía</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Stripe, Inc.</td>
+                    <td>EE.UU.</td>
+                    <td>Procesamiento de pagos</td>
+                    <td>DPF (UE-EE.UU.)</td>
+                </tr>
+                <tr>
+                    <td>PayPal Holdings, Inc.</td>
+                    <td>EE.UU.</td>
+                    <td>Procesamiento de pagos</td>
+                    <td>DPF (UE-EE.UU.)</td>
+                </tr>
+                <tr>
+                    <td>OpenAI, LLC</td>
+                    <td>EE.UU.</td>
+                    <td>Modelos de lenguaje IA</td>
+                    <td>DPF (UE-EE.UU.)</td>
+                </tr>
+                <tr>
+                    <td>Deepgram, Inc.</td>
+                    <td>EE.UU.</td>
+                    <td>Procesamiento de audio</td>
+                    <td>SCCs (Cláusulas Tipo)</td>
+                </tr>
+                <tr>
+                    <td>Google LLC</td>
+                    <td>EE.UU.</td>
+                    <td>APIs de IA y Analytics</td>
+                    <td>DPF (UE-EE.UU.)</td>
+                </tr>
+                <tr>
+                    <td>Amazon Web Services</td>
+                    <td>UE / Global</td>
+                    <td>Email (SES) y almacenamiento</td>
+                    <td>Dentro EEE / DPF</td>
+                </tr>
+                <tr>
+                    <td>Cloudflare, Inc.</td>
+                    <td>EE.UU. / Global</td>
+                    <td>Almacenamiento (R2) y CDN</td>
+                    <td>DPF (UE-EE.UU.)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>TopEstrellas revisa periódicamente que los proveedores mantengan las garantías adecuadas conforme al Capítulo V del RGPD.</p>
+
+        <h3>Derechos de los interesados</h3>
+        <p>Los usuarios pueden ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad dirigiéndose a <a href="mailto:info@topestrellas.com">info@topestrellas.com</a>. TopEstrellas responderá en el plazo máximo de un mes desde la recepción de la solicitud, ampliable en dos meses adicionales en caso de solicitudes complejas o numerosas, conforme al artículo 12.3 del RGPD.</p>
+        <p>Asimismo, los interesados tienen derecho a presentar una reclamación ante la <strong>Agencia Española de Protección de Datos</strong> (<a href="https://www.aepd.es">www.aepd.es</a>) si consideran que sus derechos no han sido debidamente atendidos.</p>
+    </div>
+
+    <!-- SECCIÓN 10 -->
+    <div class="section">
+        <h2>10. Política de cookies</h2>
+        <p>El uso de cookies y tecnologías similares en este sitio web se rige por lo establecido en el artículo 22.2 de la LSSI-CE y la normativa vigente en materia de protección de datos. Para información detallada sobre las cookies utilizadas, sus finalidades, duración y la forma de gestionarlas o desactivarlas, consulte nuestra <a href="https://topestrellas.com/cookies">Política de Cookies</a>.</p>
+    </div>
+
+    <!-- SECCIÓN 11 -->
+    <div class="section">
+        <h2>11. Legislación aplicable y jurisdicción</h2>
+        <p>El presente aviso legal, así como la relación entre TopEstrellas y el usuario, se rigen por la <strong>legislación española</strong>.</p>
+        <p>Para la resolución de cualquier controversia, conflicto o reclamación que pudiera surgir en relación con el acceso, uso o contratación del sitio web o de la plataforma TopEstrellas, las partes acuerdan someterse expresamente a la jurisdicción de los <strong>Juzgados y Tribunales de Santa Cruz de Tenerife</strong>, con renuncia expresa a cualquier otro fuero que pudiera corresponderles, sin perjuicio de los fueros imperativos que pudieran resultar de aplicación conforme a la legislación vigente, incluido el Reglamento (UE) nº 1215/2012 (Bruselas I bis) para disputas con elementos transfronterizos.</p>
+
+        <h3>Resolución alternativa de conflictos</h3>
+        <p>Con carácter previo al ejercicio de acciones judiciales, las partes procurarán resolver sus diferencias de forma amistosa. En caso de no alcanzar un acuerdo, las partes podrán someter la controversia a <strong>mediación</strong> conforme a la Ley 5/2012, de 6 de julio, de mediación en asuntos civiles y mercantiles, antes de acudir a la vía jurisdiccional.</p>
+    </div>
+
+    <!-- SECCIÓN 12 -->
+    <div class="section">
+        <h2>12. Cesión y cambio de forma jurídica</h2>
+        <p>En caso de cambio en la forma jurídica del titular de TopEstrellas (incluyendo, sin carácter limitativo, la constitución de una sociedad limitada, sociedad limitada unipersonal o cualquier otra forma societaria), cambio de denominación social o nombre comercial, fusión, escisión, absorción, transmisión total o parcial del negocio, o cesión a cualquier entidad del mismo grupo empresarial, el presente aviso legal y todas las relaciones contractuales mantenidas con los usuarios se transferirán a la entidad sucesora, manteniéndose todas las condiciones, garantías y obligaciones vigentes.</p>
+        <p>TopEstrellas notificará a los usuarios registrados cualquier cambio sustancial derivado de los supuestos anteriores en un plazo máximo de treinta (30) días desde que este se haga efectivo.</p>
+    </div>
+
+    <!-- SECCIÓN 13 -->
+    <div class="section">
+        <h2>13. Separabilidad</h2>
+        <p>Si cualquiera de las cláusulas del presente aviso legal fuera declarada nula, inválida o ineficaz por resolución judicial o administrativa firme, dicha nulidad, invalidez o ineficacia no afectará a las restantes cláusulas, que mantendrán su plena vigencia y eficacia.</p>
+    </div>
+
+    <!-- SECCIÓN 14 -->
+    <div class="section">
+        <h2>14. Modificaciones</h2>
+        <p>TopEstrellas se reserva el derecho a modificar el presente aviso legal en cualquier momento. Las modificaciones sustanciales serán notificadas a los usuarios registrados con un preaviso mínimo de <strong>treinta (30) días naturales</strong> mediante correo electrónico o aviso destacado en la plataforma.</p>
+        <p>El uso continuado del sitio web o de la plataforma tras la entrada en vigor de las modificaciones implicará la aceptación de las mismas. En caso de desacuerdo con las modificaciones, el cliente profesional podrá resolver su contrato conforme a lo previsto en las Condiciones Generales de Contratación.</p>
+        <p>La versión vigente del aviso legal será siempre la publicada en esta página. El historial de versiones anteriores se encuentra disponible en el repositorio legal de TopEstrellas.</p>
+    </div>
+
+</main>
+
+<footer class="legal-footer">
+    <p><strong>TopEstrellas</strong> — Plataforma SaaS de digitalización para negocios locales</p>
+    <p>Versión 1.0.0 · Última actualización: 5 de abril de 2026 · ID: TE-AL-2026-001</p>
+    <p>© 2026 Merquis Jesús Cruz Veloz. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
