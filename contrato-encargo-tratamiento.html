@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Contrato de encargo del tratamiento de TopEstrellas: cómo trata TopEstrellas, por cuenta de cada negocio, los datos personales de sus clientes (artículo 28 del RGPD)">
+    <title>Contrato de encargo del tratamiento — TopEstrellas</title>
+    <style>
+        @import url('https://merquis.github.io/topestrellas-legal/fonts.css');
+
+        :root {
+            --navy: #363C46;
+            --navy-light: #5A6172;
+            --gold: #F5A623;
+            --gold-light: #fdf4e3;
+            --white: #FFFFFF;
+            --dark: #2A2521;
+            --text: #363C46;
+            --text-light: #6B7280;
+            --bg: #FBF8F4;
+            --border: #E7E2DA;
+            --section-bg: #F2EEE8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 16px;
+            line-height: 1.75;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        .legal-header {
+            background: var(--navy);
+            color: var(--white);
+            padding: 3rem 2rem 2.5rem;
+            text-align: center;
+        }
+
+        .legal-header h1 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-header .subtitle {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            color: var(--gold);
+            font-weight: 500;
+        }
+
+        .version-bar {
+            background: var(--dark);
+            color: var(--text-light);
+            font-family: 'DM Sans', monospace;
+            font-size: 0.78rem;
+            padding: 0.6rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .version-bar span { color: #b0b0c0; }
+        .version-bar strong { color: var(--gold); font-weight: 600; }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.5rem 2rem 4rem;
+        }
+
+        .toc {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--navy);
+            border-radius: 6px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .toc h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            border: none;
+            display: block;
+        }
+
+        .toc ol {
+            padding-left: 1.2rem;
+            columns: 2;
+            column-gap: 2rem;
+        }
+
+        .toc li {
+            margin-bottom: 0.3rem;
+            font-size: 0.88rem;
+            break-inside: avoid;
+        }
+
+        .toc a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover { color: var(--gold); }
+
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+        }
+
+        .section { margin-bottom: 0.5rem; }
+
+        h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--navy-light);
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p { margin-bottom: 1rem; }
+        ul, ol { margin-bottom: 1rem; padding-left: 1.5rem; }
+        li { margin-bottom: 0.4rem; }
+
+        .data-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--navy);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1rem 0 1.5rem;
+        }
+
+        .data-card p {
+            margin-bottom: 0.35rem;
+            font-size: 0.93rem;
+        }
+
+        .data-card strong {
+            color: var(--navy);
+            font-weight: 600;
+            min-width: 180px;
+            display: inline-block;
+        }
+
+        .warning-box {
+            background: #fff8ed;
+            border: 1px solid var(--gold);
+            border-left: 4px solid var(--gold);
+            border-radius: 6px;
+            padding: 1.2rem 1.5rem;
+            margin: 1.2rem 0;
+            font-size: 0.93rem;
+        }
+
+        .warning-box strong { color: #b8860b; }
+
+        .danger-box {
+            background: #fef2f2;
+            border: 1px solid #e8a0a0;
+            border-left: 4px solid #d32f2f;
+            border-radius: 6px;
+            padding: 1.2rem 1.5rem;
+            margin: 1.2rem 0;
+            font-size: 0.93rem;
+        }
+
+        .danger-box strong { color: #c62828; }
+
+        .clause {
+            margin-left: 0.5rem;
+            padding-left: 1rem;
+            border-left: 2px solid var(--border);
+            margin-bottom: 0.8rem;
+        }
+
+        .clause p { margin-bottom: 0.5rem; }
+
+        a {
+            color: var(--navy-light);
+            text-decoration: underline;
+            text-decoration-color: var(--gold);
+            text-underline-offset: 2px;
+        }
+
+        a:hover { color: var(--gold); }
+
+        .legal-footer {
+            background: var(--dark);
+            color: #8888a0;
+            text-align: center;
+            padding: 1.5rem 2rem;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.82rem;
+            line-height: 1.6;
+        }
+
+        .legal-footer strong { color: var(--gold); }
+
+        @media (max-width: 768px) {
+            .legal-header h1 { font-size: 1.4rem; }
+            .container { padding: 1.5rem 1rem 3rem; }
+            .version-bar { flex-direction: column; gap: 0.3rem; text-align: center; }
+            .toc ol { columns: 1; }
+            .data-card strong { display: block; min-width: auto; }
+            table, thead, tbody, th, td, tr { display: block; }
+            thead { display: none; }
+            tbody tr { margin-bottom: 1rem; border: 1px solid var(--border); border-left: 4px solid var(--navy); border-radius: 6px; padding: 0.8rem; background: var(--white); }
+            tbody td { padding: 0.4rem 0; border: none; font-size: 0.85rem; }
+            tbody td::before { content: attr(data-label); display: block; font-family: 'DM Sans', sans-serif; font-weight: 700; color: var(--navy); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.2rem; }
+        }
+    .legal-header{margin-top:2.5rem}
+        .container{padding-bottom:5.5rem}
+        </style>
+</head>
+<body>
+
+<header class="legal-header">
+    <a href="https://topestrellas.com" aria-label="TopEstrellas" style="display:inline-block;line-height:0;margin-bottom:1rem"><img src="https://topestrellas.com/wp-content/uploads/2026/06/topestrellas-plataforma-digital-ia-blanco.png" alt="TopEstrellas" style="height:40px;width:auto;display:block;margin:0 auto"></a>
+    <h1>Contrato de encargo del tratamiento</h1>
+    <p class="subtitle">TopEstrellas — Anexo a las Condiciones Generales de Contratación</p>
+</header>
+
+<div class="version-bar">
+    <span>Versión: <strong>1.0.0</strong></span>
+    <span>Fecha de publicación: <strong>18 de octubre de 2026</strong></span>
+    <span>Fecha de vigencia: <strong>18 de octubre de 2026</strong></span>
+    <span>ID documento: <strong>TE-CET-2026-001</strong></span>
+</div>
+
+<main class="container">
+
+    <nav class="toc"><h2>Índice</h2><ol><li><a href="#s1">Partes</a></li><li><a href="#s2">Objeto y alcance</a></li><li><a href="#s3">Definiciones</a></li><li><a href="#s4">Descripción del tratamiento</a></li><li><a href="#s5">Instrucciones del Cliente</a></li><li><a href="#s6">Solo por cuenta del Cliente</a></li><li><a href="#s7">Obligaciones y derechos del Cliente</a></li><li><a href="#s8">Confidencialidad y acceso</a></li><li><a href="#s9">Seguridad</a></li><li><a href="#s10">Datos de salud</a></li><li><a href="#s11">Subencargados</a></li><li><a href="#s12">Transferencias internacionales</a></li><li><a href="#s13">Derechos de las personas</a></li><li><a href="#s14">Evaluaciones de impacto</a></li><li><a href="#s15">Violaciones de seguridad</a></li><li><a href="#s16">Información y auditorías</a></li><li><a href="#s17">Delegado y autoridad de control</a></li><li><a href="#s18">Duración y fin del encargo</a></li><li><a href="#s19">Responsabilidad</a></li><li><a href="#s20">Prevalencia, cambios y aceptación</a></li><li><a href="#s21">Ley aplicable y jurisdicción</a></li></ol><h2>Anexos</h2><ol type="A"><li><a href="#anexo-a">Descripción del tratamiento</a></li><li><a href="#anexo-b">Instrucciones documentadas</a></li><li><a href="#anexo-c">Medidas de seguridad</a></li><li><a href="#anexo-d">Subencargados</a></li><li><a href="#anexo-e">Lo que TopEstrellas trata como responsable</a></li></ol></nav>
+
+    <div class="section" id="resumen"><h2>En resumen</h2>
+<ul>
+<li>Cada negocio que contrata TopEstrellas (el <strong>Cliente</strong>) es el <strong>responsable</strong> de los datos personales de sus clientes. TopEstrellas es su <strong>encargado del tratamiento</strong>: los trata solo para prestarle el servicio y siguiendo sus instrucciones (artículo 28 del RGPD).</li>
+<li>TopEstrellas no usa esos datos para sí misma. Lo poco que hace por su cuenta está en una lista cerrada (Anexo E).</li>
+<li>Qué datos se tratan, de quién, para qué y durante cuánto tiempo está en el Anexo A. Lo que TopEstrellas hace por cuenta del Cliente, en el Anexo B. Las medidas de seguridad, en el Anexo C. Los proveedores que intervienen (subencargados), en el Anexo D.</li>
+<li>TopEstrellas avisa al Cliente con 30 días de antelación antes de añadir o sustituir un subencargado, y el Cliente puede oponerse.</li>
+<li>Si hay una violación de seguridad, TopEstrellas avisa al Cliente sin dilación indebida y, como máximo, en 48 horas.</li>
+<li>TopEstrellas ayuda al Cliente a atender los derechos de sus clientes, con las evaluaciones de impacto y con las auditorías.</li>
+<li>Al terminar, el Cliente elige: que se supriman los datos, que se le devuelvan o que se entreguen a otro proveedor.</li>
+<li>Cada parte responde de lo suyo. Nada de este contrato limita lo que los clientes del negocio pueden reclamar.</li>
+</ul>
+<p>Este resumen ayuda a leer el contrato, pero no lo sustituye.</p>
+</div>
+<div class="section" id="s1"><h2>1. Partes</h2>
+<h3>1.1. Encargado del tratamiento: TopEstrellas</h3>
+<div class="data-card"><p><strong>Titular:</strong> Merquis Jesús Cruz Veloz</p>
+<p><strong>NIF:</strong> 45983493F</p>
+<p><strong>Nombre comercial:</strong> TopEstrellas</p>
+<p><strong>Domicilio:</strong> Calle Barchimbre 1, El Fraile, Santa Cruz de Tenerife, Islas Canarias, España</p>
+<p><strong>Correo electrónico:</strong> info@topestrellas.com</p>
+<p><strong>Teléfono:</strong> +34 633 163 539</p>
+<p><strong>Protección de datos:</strong> info@topestrellas.com</p>
+</div>
+<h3>1.2. Responsable del tratamiento: el Cliente</h3>
+<p>El Cliente es la persona física o jurídica titular del negocio que contrata TopEstrellas según las Condiciones Generales. Se identifica con los datos de su cuenta y con los datos fiscales de su negocio que constan en el Panel: nombre o razón social, nombre comercial del local, NIF, domicilio y datos de contacto.</p>
+<p>El Cliente mantiene esos datos completos y al día. Su nombre o razón social, junto al nombre del local, es lo que ven sus clientes como «Responsable» en la información básica de protección de datos.</p>
+<p>Si un mismo titular tiene varios negocios en la plataforma, este contrato los cubre todos. Si una misma cuenta gestiona negocios de titulares distintos, se entiende celebrado este contrato con cada titular, y quien lo acepta declara tener poder de cada uno de ellos. Si un negocio cambia de titular, el nuevo titular queda vinculado por este contrato desde que acepta el traspaso en la plataforma (cláusula 20.3 de las Condiciones Generales).</p>
+<h3>1.3. Comunicaciones entre las partes</h3>
+<p>Las comunicaciones de este contrato se envían al correo electrónico con el que el Cliente se registró, que es el canal oficial de comunicación (cláusula 4.3 de las Condiciones Generales). El Cliente escribe a TopEstrellas a info@topestrellas.com.</p>
+</div>
+<div class="section" id="s2"><h2>2. Objeto y alcance</h2>
+<h3>2.1. Objeto</h3>
+<p>Este contrato regula el tratamiento de datos personales que TopEstrellas hace <strong>por cuenta del Cliente</strong> al prestarle los servicios de la plataforma, conforme al artículo 28 del RGPD. Forma parte de las Condiciones Generales, está incluido en la cuota y no tiene precio aparte.</p>
+<h3>2.2. Qué datos cubre</h3>
+<p>Cubre los datos de las personas que se relacionan con el negocio del Cliente a través de la plataforma. Por ejemplo, de quien:</p>
+<ul>
+<li>reserva mesa, hace un pedido o pide una cita;</li>
+<li>deja una opinión o participa en una promoción;</li>
+<li>se suscribe a los avisos del negocio;</li>
+<li>crea una cuenta en la web del Cliente;</li>
+<li>visita sus páginas públicas.</li>
+</ul>
+<p>También cubre los datos del personal del Cliente que usa el Panel y los de los proveedores del Cliente que figuran en las facturas de gasto que sube. El Anexo A los describe módulo a módulo.</p>
+<h3>2.3. Qué no cubre</h3>
+<div class="clause"><p><strong>(a)</strong> Los datos del propio Cliente como cliente de TopEstrellas: alta, cuotas, facturas de TopEstrellas y soporte. TopEstrellas los trata como responsable, según su <a href="https://merquis.github.io/topestrellas-legal/politica-privacidad-b2b.html">Política de Privacidad para clientes profesionales</a>.</p>
+<p><strong>(b)</strong> Lo que TopEstrellas trata para sus propios fines, que es solo lo que recoge el Anexo E.</p>
+<p><strong>(c)</strong> Lo que el Cliente hace por su cuenta fuera de la plataforma; por ejemplo, con los ficheros que exporta o con las llamadas y los mensajes de WhatsApp que hace desde su propio teléfono.</p>
+</div>
+<h3>2.4. Módulos que aún no funcionan</h3>
+<p>Los módulos que la plataforma anuncia pero que todavía no funcionan para los negocios no forman parte de este contrato. Entrarán cuando se añadan a los anexos, según la cláusula 20.</p>
+</div>
+<div class="section" id="s3"><h2>3. Definiciones</h2>
+<ul>
+<li><strong>RGPD:</strong> el Reglamento (UE) 2016/679, General de Protección de Datos.</li>
+<li><strong>LOPDGDD:</strong> la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales.</li>
+<li><strong>LSSI:</strong> la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico.</li>
+<li><strong>Condiciones Generales:</strong> las <a href="https://merquis.github.io/topestrellas-legal/condiciones-generales.html">Condiciones Generales de Contratación de TopEstrellas</a>, de las que este contrato forma parte.</li>
+<li><strong>Datos:</strong> los datos personales que TopEstrellas trata por cuenta del Cliente (cláusula 2.2). Son los que las Condiciones Generales llaman «Datos del encargo».</li>
+<li><strong>Interesados:</strong> las personas a las que se refieren los Datos.</li>
+<li><strong>Panel:</strong> el panel de administración (panel.topestrellas.com), desde el que el Cliente gestiona su negocio.</li>
+<li><strong>Páginas públicas del Cliente:</strong> su web en localestrella.com (por ejemplo, nombrenegocio.localestrella.com) o en su dominio propio, y el recuadro de la plataforma que el Cliente incrusta en su propia web.</li>
+<li><strong>Subencargado:</strong> cada proveedor al que TopEstrellas recurre y que trata Datos.</li>
+<li><strong>EEE:</strong> el Espacio Económico Europeo.</li>
+<li><strong>Violación de seguridad:</strong> todo incidente de seguridad que cause la destrucción, la pérdida o la alteración de los Datos, o su comunicación o el acceso a ellos sin autorización, ya sea por accidente o de forma ilícita (artículo 4.12 del RGPD).</li>
+<li><strong>Instrucciones documentadas:</strong> las de la cláusula 5.</li>
+</ul>
+</div>
+<div class="section" id="s4"><h2>4. Descripción del tratamiento</h2>
+<p>El objeto, la duración, la naturaleza y la finalidad del tratamiento, los tipos de datos y las categorías de Interesados se describen en el Anexo A.</p>
+</div>
+<div class="section" id="s5"><h2>5. Instrucciones del Cliente</h2>
+<h3>5.1. Instrucciones documentadas</h3>
+<p>TopEstrellas trata los Datos solo siguiendo las instrucciones documentadas del Cliente, también en lo que toca a las transferencias fuera del EEE (cláusula 12). Son instrucciones documentadas:</p>
+<div class="clause"><p><strong>(a)</strong> Este contrato y sus anexos, en especial el Anexo B, que dice lo que TopEstrellas hace por cuenta del Cliente en cada módulo.</p>
+<p><strong>(b)</strong> Lo que el Cliente elige en su Panel; por ejemplo, activar un módulo, ofrecer la casilla de ofertas, lanzar una campaña, o exportar o borrar una ficha.</p>
+<p><strong>(c)</strong> Las instrucciones que el Cliente envíe por escrito a info@topestrellas.com desde el correo de su canal oficial. TopEstrellas las conserva.</p>
+</div>
+<h3>5.2. Configuración común</h3>
+<p>Algunas cosas funcionan igual para todos los negocios y el Cliente no puede cambiarlas desde su Panel; por ejemplo, los plazos de conservación, los subencargados y los textos legales de los formularios. Están en el apartado B.3 del Anexo B. Al aceptar este contrato, el Cliente las aprueba como instrucciones suyas, y TopEstrellas no las cambia sin seguir la cláusula 20, salvo lo que el propio apartado B.3 permite.</p>
+<h3>5.3. Obligación legal</h3>
+<p>Si una ley obliga a TopEstrellas a tratar los Datos de otra forma (por ejemplo, ante un requerimiento judicial), avisará antes al Cliente, salvo que esa ley lo prohíba por razones importantes de interés público.</p>
+<h3>5.4. Instrucciones contrarias a la ley</h3>
+<p>Si TopEstrellas cree que una instrucción del Cliente infringe la normativa de protección de datos, se lo dirá de inmediato. Podrá no aplicarla hasta que el Cliente la confirme o la cambie. Si el Cliente insiste, TopEstrellas podrá resolver el contrato en lo que afecte a ese tratamiento.</p>
+</div>
+<div class="section" id="s6"><h2>6. Solo por cuenta del Cliente</h2>
+<h3>6.1. Sin fines propios</h3>
+<p>TopEstrellas trata los Datos solo para prestar el servicio al Cliente y para las finalidades del Anexo A. No los usa para sus propios fines. En particular, TopEstrellas no:</p>
+<div class="clause"><p><strong>(a)</strong> envía a los Interesados, con estos Datos, comunicaciones comerciales propias ni de terceros;</p>
+<p><strong>(b)</strong> cruza los Datos de un Cliente con los de otro, ni se los muestra a otros negocios;</p>
+<p><strong>(c)</strong> vende ni cede los Datos, tampoco como un activo si vende su empresa;</p>
+<p><strong>(d)</strong> entrena modelos de inteligencia artificial con los Datos;</p>
+<p><strong>(e)</strong> saca estadísticas de los Datos para sí.</p>
+</div>
+<h3>6.2. Cambio de titular de TopEstrellas</h3>
+<p>Si TopEstrellas cede su posición en el contrato (por ejemplo, porque pasa a ser una sociedad), los Datos no se venden y siguen siendo del Cliente: quien la sustituya seguirá tratándolos como encargado del Cliente, con este mismo contrato. TopEstrellas se lo comunicará al Cliente, que podrá resolver el contrato sin coste si no está de acuerdo (cláusula 26.1 de las Condiciones Generales).</p>
+<h3>6.3. Lo que TopEstrellas trata por su cuenta</h3>
+<p>Lo que TopEstrellas sí trata como responsable, con datos de los visitantes de las páginas públicas del Cliente, está en el Anexo E y queda fuera de este contrato.</p>
+<p>Si TopEstrellas usara los Datos para sus propios fines, se la consideraría responsable de ese tratamiento y respondería sola de él (artículo 28.10 del RGPD).</p>
+</div>
+<div class="section" id="s7"><h2>7. Obligaciones y derechos del Cliente</h2>
+<h3>7.1. Obligaciones</h3>
+<p>Como responsable del tratamiento, el Cliente:</p>
+<div class="clause"><p><strong>(a)</strong> Decide para qué usa los Datos y tiene una base jurídica para cada uso, también para los datos de salud, como las alergias, las intolerancias o la movilidad reducida.</p>
+<p><strong>(b)</strong> Informa a sus clientes (artículos 13 y 14 del RGPD). TopEstrellas le ayuda: debajo del botón de reservar muestra por su cuenta la información básica de protección de datos, con el Cliente como «Responsable», y enlaza, desde el pie de sus páginas públicas y desde el formulario de reservas, el texto común de la <a href="https://merquis.github.io/topestrellas-legal/politica-privacidad-b2c.html">política de privacidad para los clientes de los negocios</a>. Al aceptar este contrato, el Cliente adopta ese texto como su propia información y responde de su contenido. Si trata los Datos fuera de la plataforma, o para fines que ese texto no recoge, debe informar él mismo.</p>
+<p><strong>(c)</strong> Solo envía comunicaciones comerciales a quien puede recibirlas, en los términos de los artículos 21 y 22 de la LSSI y de la cláusula 30 de las Condiciones Generales. Decide a quién envía cada campaña y atiende las bajas. Como los correos de campaña no llevan un enlace de baja automático, indica en cada campaña cómo darse de baja; por ejemplo, respondiendo al propio correo.</p>
+<p><strong>(d)</strong> Atiende las peticiones de sus clientes (acceso, rectificación, supresión, oposición, limitación y portabilidad), con la ayuda que describe la cláusula 13.</p>
+<p><strong>(e)</strong> Decide quién de su equipo entra en el Panel y con qué permisos, y responde de lo que se haga con sus credenciales.</p>
+<p><strong>(f)</strong> Responde de lo que hace con los Datos que exporta o usa fuera de la plataforma.</p>
+<p><strong>(g)</strong> Hace, cuando proceda, la evaluación de impacto y la consulta previa a la autoridad (artículos 35 y 36 del RGPD), y notifica las violaciones de seguridad a la autoridad y a los Interesados cuando corresponda (artículos 33 y 34 del RGPD). TopEstrellas le ayuda según las cláusulas 14 y 15.</p>
+<p><strong>(h)</strong> No introduce en la plataforma más datos de salud de los necesarios y no da instrucciones contrarias a la ley.</p>
+</div>
+<h3>7.2. Derechos</h3>
+<p>El Cliente tiene derecho a:</p>
+<div class="clause"><p><strong>(a)</strong> dar instrucciones documentadas y cambiarlas (cláusula 5);</p>
+<p><strong>(b)</strong> que TopEstrellas no use los Datos para nada más que su servicio (cláusula 6);</p>
+<p><strong>(c)</strong> oponerse a un subencargado nuevo y, si no hay acuerdo, dar de baja el módulo afectado o resolver el contrato (cláusula 11.3);</p>
+<p><strong>(d)</strong> recibir el aviso de las violaciones de seguridad (cláusula 15);</p>
+<p><strong>(e)</strong> recibir ayuda con los derechos de sus clientes, con la seguridad y con las evaluaciones de impacto (cláusulas 13 y 14);</p>
+<p><strong>(f)</strong> pedir información y hacer auditorías (cláusula 16);</p>
+<p><strong>(g)</strong> aprobar o rechazar los cambios de este contrato (cláusula 20.3);</p>
+<p><strong>(h)</strong> elegir, al terminar, entre la supresión de los Datos, su devolución o su entrega a otro proveedor (cláusula 18.4);</p>
+<p><strong>(i)</strong> pedir que se suspenda el tratamiento, o resolver el contrato, si TopEstrellas incumple de forma grave este contrato o la normativa de protección de datos.</p>
+</div>
+</div>
+<div class="section" id="s8"><h2>8. Confidencialidad y acceso del personal de TopEstrellas</h2>
+<h3>8.1. Quién accede</h3>
+<p>Dentro de TopEstrellas, solo acceden a los Datos las personas que lo necesitan para prestar el servicio, dar soporte o mantener la seguridad, y solo para eso. Todas ellas están sujetas al deber de confidencialidad (artículo 5 de la LOPDGDD), que sigue vigente después de que termine su relación con TopEstrellas.</p>
+<h3>8.2. Soporte en el Panel del Cliente</h3>
+<p>El personal de TopEstrellas con permisos de administración general puede ver los Datos de todos los negocios. Solo entra en el Panel del Cliente para darle soporte, resolver incidencias o proteger la plataforma.</p>
+<p>Cada vez que entra en el Panel de un Cliente queda apuntado quién entra, en qué negocio, cuándo y desde qué dirección IP. Si el apunte no se puede escribir, no se puede entrar. Este registro cubre la entrada al Panel: los accesos técnicos que no pasan por él, como el acceso directo a la base de datos, no quedan apuntados en él. A petición del Cliente, TopEstrellas le facilita las entradas de soporte en su Panel (cláusula 16.1).</p>
+</div>
+<div class="section" id="s9"><h2>9. Seguridad</h2>
+<p>TopEstrellas aplica las medidas técnicas y organizativas del Anexo C, apropiadas al riesgo (artículo 32 del RGPD). Las revisa al menos una vez al año y después de cada incidente.</p>
+<p>Puede mejorarlas cuando quiera, pero no puede rebajar el nivel de protección sin la aprobación del Cliente (cláusula 20.3).</p>
+</div>
+<div class="section" id="s10"><h2>10. Datos de salud</h2>
+<h3>10.1. Qué datos de salud se recogen</h3>
+<p>La plataforma recoge estos datos de salud por cuenta del Cliente:</p>
+<ul>
+<li><strong>En las reservas de mesa:</strong> los alérgenos, de una lista cerrada de 14; «otra alergia», un texto de hasta 160 caracteres; y si alguien del grupo tiene movilidad reducida.</li>
+<li><strong>En la ficha de cliente de Citas:</strong> «Alergias y avisos», un texto de hasta 150 caracteres que apunta el Cliente.</li>
+<li><strong>En los campos libres:</strong> lo que una persona escriba en las observaciones de la reserva, en las notas de la cita o en la conversación con el asistente de citas.</li>
+</ul>
+<h3>10.2. Garantías</h3>
+<div class="clause"><p><strong>(a)</strong> Las alergias, «otra alergia» y la movilidad reducida de una reserva se borran solas 24 horas después de que termine la reserva. También se borran sus copias en los pagos, en las garantías y en las peticiones de mesa «sin sitio». Es una instrucción del Cliente.</p>
+<p><strong>(b)</strong> Esos datos de las reservas solo los ven el equipo del Cliente con acceso a las reservas y, cuando da soporte, el personal de TopEstrellas (cláusula 8). No se envían a la inteligencia artificial.</p>
+<p><strong>(c)</strong> Los correos de la reserva que recibe el cliente no llevan sus alergias, su movilidad ni sus observaciones.</p>
+<p><strong>(d)</strong> Los avisos de reserva que se imprimen no llevan alergias, teléfono, correo ni observaciones.</p>
+<p><strong>(e)</strong> El texto de «Alergias y avisos» de Citas no se escribe en los registros técnicos.</p>
+</div>
+<h3>10.3. Lo que no cubre el borrado de 24 horas</h3>
+<ul>
+<li><strong>Observaciones de la reserva</strong> (texto libre): se conservan 5 años, con la reserva.</li>
+<li><strong>«Alergias y avisos» de Citas:</strong> no tienen plazo automático; duran lo que dura la ficha. Se incluyen en la exportación de clientes de Citas.</li>
+<li><strong>Notas libres de una cita:</strong> se conservan 5 años, con la cita.</li>
+<li><strong>Lo que la persona cuente al asistente de citas:</strong> queda en su conversación, que no entra en este borrado.</li>
+</ul>
+<h3>10.4. Datos de salud que pueden llegar a la inteligencia artificial</h3>
+<p>Los datos de salud de las reservas de mesa no se envían a la inteligencia artificial: el asistente del Panel no puede consultar las reservas. Sí pueden llegar al proveedor de inteligencia artificial de texto que esté en uso (en primer lugar, DeepSeek; Anexo D):</p>
+<div class="clause"><p><strong>(a)</strong> las «Alergias y avisos» que el personal del Cliente dicte o escriba al asistente del Panel para apuntarlas en una ficha;</p>
+<p><strong>(b)</strong> las notas de las citas, cuando el asistente del Panel consulta las citas;</p>
+<p><strong>(c)</strong> lo que el cliente cuente al asistente de citas, por escrito o por voz. La voz pasa antes por Deepgram, que la convierte en texto.</p>
+</div>
+</div>
+<div class="section" id="s11"><h2>11. Subencargados</h2>
+<h3>11.1. Autorización general</h3>
+<p>El Cliente autoriza a TopEstrellas a recurrir a los subencargados del Anexo D.</p>
+<h3>11.2. Aviso de cambios</h3>
+<p>TopEstrellas avisará por escrito al Cliente, con 30 días de antelación, de cada alta o sustitución prevista de un subencargado. El aviso irá por correo al canal oficial y dirá quién es el subencargado, qué hará y qué Datos tratará. Publicar la lista nueva en la web no basta.</p>
+<h3>11.3. Oposición</h3>
+<p>El Cliente puede oponerse por escrito, por motivos de protección de datos, dentro de esos 30 días. Si se opone, TopEstrellas no usará ese subencargado para sus Datos, si es técnicamente posible, o le propondrá una alternativa. Si no hay acuerdo, el Cliente podrá dar de baja el módulo afectado o resolver el contrato sin penalización, y recuperará la parte pagada del periodo que no haya disfrutado. Si el Cliente no se opone en el plazo, el cambio se entiende aceptado.</p>
+<h3>11.4. Sustitución urgente</h3>
+<p>Si un subencargado deja de prestar su servicio o pone en riesgo la seguridad, TopEstrellas podrá sustituirlo sin esperar el plazo. Avisará al Cliente en un máximo de 3 días hábiles, y el Cliente tendrá el mismo derecho de oposición.</p>
+<h3>11.5. Condiciones de los subencargados</h3>
+<p>TopEstrellas usa los servicios de cada subencargado con las condiciones que este ofrece a sus clientes. A petición del Cliente, TopEstrellas le facilitará las condiciones de protección de datos de cada uno, o el enlace a ellas. Las condiciones de DeepSeek no incluyen un contrato de encargo del tratamiento.</p>
+<h3>11.6. TopEstrellas responde de sus subencargados</h3>
+<p>TopEstrellas responde ante el Cliente de lo que hagan sus subencargados con los Datos como si lo hubiera hecho ella misma, con el régimen de la cláusula 19. Si sabe que un subencargado ha incumplido sus obligaciones con los Datos, se lo dirá al Cliente.</p>
+<h3>11.7. Lista al día</h3>
+<p>El Cliente puede pedir en cualquier momento la lista actualizada de subencargados, con el nombre y los datos de contacto de cada uno.</p>
+</div>
+<div class="section" id="s12"><h2>12. Transferencias internacionales</h2>
+<h3>12.1. Subencargados que pueden tratar Datos fuera del EEE</h3>
+<p>Algunos subencargados del Anexo D pueden tratar los Datos fuera del EEE; en especial, los proveedores de inteligencia artificial. Google Gemini se usa en su ubicación «global», en la que Google puede tratar los Datos en cualquier país.</p>
+<h3>12.2. Instrucción del Cliente</h3>
+<p>Al aceptar este contrato, el Cliente da a TopEstrellas la instrucción de usar esos subencargados, aunque eso suponga transferir Datos fuera del EEE.</p>
+<h3>12.3. Garantías</h3>
+<p>Cuando el subencargado esté cubierto por una decisión de adecuación de la Comisión Europea (por ejemplo, por el Marco de Privacidad de Datos UE-EE. UU.) o haya aceptado las cláusulas contractuales tipo de la Comisión, la transferencia se apoya en esa garantía. El Cliente puede preguntar a TopEstrellas cuál se aplica a cada subencargado. Con DeepSeek no se aplica ninguna de ellas.</p>
+<h3>12.4. Nuevas transferencias</h3>
+<p>TopEstrellas no recurrirá a nuevos subencargados fuera del EEE sin seguir la cláusula 11.</p>
+</div>
+<div class="section" id="s13"><h2>13. Derechos de las personas</h2>
+<h3>13.1. Ante quién se ejercen</h3>
+<p>Las personas ejercen sus derechos ante el Cliente. TopEstrellas le ayuda con medidas técnicas y organizativas (artículo 28.3.e del RGPD).</p>
+<h3>13.2. Peticiones que llegan a TopEstrellas</h3>
+<p>Si una petición llega a TopEstrellas, TopEstrellas se la reenvía al Cliente de inmediato y, como muy tarde, el día hábil siguiente. No la contesta por su cuenta, salvo que el Cliente lo autorice. Solo le dice a la persona que su petición se ha pasado al negocio y, si no sabe cómo contactar con él, le da la identidad y los datos de contacto del Cliente.</p>
+<h3>13.3. Lo que el Cliente puede hacer desde su Panel</h3>
+<ul>
+<li><strong>Ver</strong> las fichas, las reservas, los pedidos, las citas, las opiniones y los contactos captados en opiniones y promociones.</li>
+<li><strong>Corregir</strong> el nombre, siempre, y el teléfono y el correo, solo si la persona no tiene cuenta propia (si la tiene, los cambia ella).</li>
+<li><strong>Borrar una ficha</strong> que no tenga cuenta, citas, facturas ni reservas pendientes. Al borrarla, sus reservas pasadas pierden, en la misma operación, el nombre, el teléfono, el correo, las alergias, la movilidad y las notas.</li>
+<li><strong>Exportar en CSV</strong> los contactos captados en opiniones y promociones, los clientes de Citas (con sus «Alergias y avisos»), las participaciones en Rasca y Gana y el libro de ventas.</li>
+</ul>
+<p>La propia persona puede, en su perfil en la web de ese negocio, ver y corregir su nombre, su teléfono y sus direcciones, borrar sus datos de factura, quitar sus tarjetas guardadas, desactivar los avisos en su móvil y cancelar su reserva.</p>
+<h3>13.4. Lo que hace TopEstrellas a petición del Cliente</h3>
+<p>Lo siguiente no se puede hacer desde el Panel. TopEstrellas lo hace cuando el Cliente se lo pide, en un plazo máximo de 5 días hábiles, para que el Cliente pueda contestar dentro del mes que fija el RGPD:</p>
+<ul>
+<li>borrar una ficha que tiene cuenta;</li>
+<li>borrar los datos de una persona en sus pedidos, opiniones y contactos de promociones (borrar la ficha solo los quita de las reservas);</li>
+<li>entregar todos los datos de una persona (derechos de acceso y portabilidad);</li>
+<li>borrar sus datos de la analítica;</li>
+<li>aplicar una oposición o una limitación del tratamiento.</li>
+</ul>
+<h3>13.5. Sin coste</h3>
+<p>TopEstrellas no cobra por esta ayuda.</p>
+</div>
+<div class="section" id="s14"><h2>14. Ayuda con la seguridad, las evaluaciones de impacto y las consultas previas</h2>
+<p>TopEstrellas ayuda al Cliente según la naturaleza del tratamiento y la información de que disponga:</p>
+<div class="clause"><p><strong>(a)</strong> le da la información de los Anexos A, C y D, y la que necesite para su evaluación de impacto o para su consulta previa a la autoridad (artículos 35 y 36 del RGPD);</p>
+<p><strong>(b)</strong> le avisa sin demora si descubre que unos Datos son inexactos o han quedado desactualizados;</p>
+<p><strong>(c)</strong> le ayuda con las violaciones de seguridad, según la cláusula 15.</p>
+</div>
+</div>
+<div class="section" id="s15"><h2>15. Violaciones de seguridad</h2>
+<h3>15.1. Aviso al Cliente</h3>
+<p>TopEstrellas avisará al Cliente de cualquier violación de seguridad que afecte a sus Datos sin dilación indebida y, como máximo, en 48 horas desde que tenga constancia de ella. No tiene que valorar antes el riesgo: eso le corresponde al Cliente.</p>
+<p>Si la violación afecta a varios negocios, TopEstrellas avisa a cada uno de ellos.</p>
+<h3>15.2. Canal</h3>
+<p>El aviso se envía por correo al canal oficial del Cliente y, si la violación es grave, también por teléfono.</p>
+<h3>15.3. Contenido</h3>
+<p>El aviso incluye, como mínimo:</p>
+<div class="clause"><p><strong>(a)</strong> qué ha pasado, con las categorías y el número aproximado de personas y de registros afectados;</p>
+<p><strong>(b)</strong> un punto de contacto para obtener más información;</p>
+<p><strong>(c)</strong> las consecuencias probables y las medidas tomadas o propuestas, también para reducir sus efectos.</p>
+</div>
+<p>Lo que no se sepa al principio se envía después, por fases y sin dilación.</p>
+<h3>15.4. Registro</h3>
+<p>TopEstrellas documenta cada violación de seguridad: qué pasó, sus efectos y las medidas que se tomaron.</p>
+<h3>15.5. Quién notifica</h3>
+<p>La notificación a la Agencia Española de Protección de Datos y la comunicación a las personas afectadas, cuando procedan, las hace el Cliente (artículos 33 y 34 del RGPD), con la ayuda de TopEstrellas.</p>
+</div>
+<div class="section" id="s16"><h2>16. Información y auditorías</h2>
+<h3>16.1. Información</h3>
+<p>TopEstrellas pone a disposición del Cliente la información necesaria para demostrar que cumple este contrato:</p>
+<div class="clause"><p><strong>(a)</strong> este contrato y sus anexos, al día;</p>
+<p><strong>(b)</strong> la lista de subencargados;</p>
+<p><strong>(c)</strong> las medidas de seguridad;</p>
+<p><strong>(d)</strong> las entradas del personal de soporte en su Panel, si las pide;</p>
+<p><strong>(e)</strong> respuestas a sus preguntas sobre el tratamiento, en un plazo máximo de 15 días.</p>
+</div>
+<h3>16.2. Auditorías</h3>
+<ul>
+<li><strong>Quién:</strong> el Cliente o un auditor que él elija, obligado a guardar confidencialidad.</li>
+<li><strong>Cuándo:</strong> una vez al año como máximo y, además, siempre que haya una violación de seguridad, un requerimiento de la autoridad o indicios de incumplimiento.</li>
+<li><strong>Preaviso:</strong> 30 días, salvo urgencia.</li>
+<li><strong>Condiciones:</strong> en horario laboral, sin acceder a datos de otros negocios y sin poner en riesgo la seguridad de la plataforma.</li>
+<li><strong>Cómo:</strong> se empieza por la documentación y, si hace falta, se hace una inspección a distancia o presencial.</li>
+</ul>
+<h3>16.3. Costes</h3>
+<p>Cada parte paga sus propios costes. TopEstrellas no cobra por colaborar en una auditoría razonable.</p>
+<h3>16.4. Corrección</h3>
+<p>Si la auditoría encuentra fallos, TopEstrellas los corrige en un plazo razonable acordado con el Cliente.</p>
+<h3>16.5. Subencargados</h3>
+<p>Los subencargados se auditan a través de los informes y las certificaciones que ofrezcan.</p>
+</div>
+<div class="section" id="s17"><h2>17. Delegado de protección de datos y autoridad de control</h2>
+<p>TopEstrellas no ha designado delegado de protección de datos. Las consultas sobre protección de datos se dirigen a info@topestrellas.com.</p>
+<p>TopEstrellas coopera con la Agencia Española de Protección de Datos. Avisará al Cliente de cualquier requerimiento de una autoridad sobre sus Datos, salvo que la ley lo prohíba.</p>
+</div>
+<div class="section" id="s18"><h2>18. Duración, suspensión y fin del encargo</h2>
+<h3>18.1. Duración</h3>
+<p>Este contrato dura lo mismo que el contrato del servicio. Después, se sigue aplicando mientras TopEstrellas conserve Datos del Cliente. Cada dato se conserva durante el plazo que indica el Anexo A.</p>
+<h3>18.2. Pausa y suspensión</h3>
+<p>Pausar o cancelar la suscripción no termina el encargo. El servicio sigue hasta el final del periodo pagado. Si ese periodo acaba con la suscripción en pausa o sin renovar, el negocio queda suspendido, y el Cliente puede reactivarlo cuando quiera. Mientras esté suspendido:</p>
+<div class="clause"><p><strong>(a)</strong> TopEstrellas conserva los Datos por cuenta del Cliente, sin plazo máximo, para que pueda volver;</p>
+<p><strong>(b)</strong> no los usa para nada más;</p>
+<p><strong>(c)</strong> el Cliente no puede ver, exportar ni borrar desde su Panel los Datos de los módulos pausados. Recupera el acceso al reactivarlos y, mientras tanto, puede pedir una copia según la cláusula 24 de las Condiciones Generales.</p>
+</div>
+<p>Si el Cliente prefiere terminar, puede pedir el cierre de su cuenta (cláusula 18.3) y elegir qué se hace con sus Datos (cláusula 18.4).</p>
+<h3>18.3. Fin del encargo</h3>
+<p>El encargo termina cuando termina el contrato del servicio, es decir:</p>
+<div class="clause"><p><strong>(a)</strong> cuando el Cliente pide por escrito cerrar su cuenta;</p>
+<p><strong>(b)</strong> cuando TopEstrellas resuelve el contrato (cláusula 23.2 de las Condiciones Generales); o</p>
+<p><strong>(c)</strong> cuando TopEstrellas deja de prestar el servicio (cláusula 23.3 de las Condiciones Generales).</p>
+</div>
+<h3>18.4. Elección del Cliente</h3>
+<p>Al terminar el encargo, el Cliente elige por escrito una de estas opciones:</p>
+<div class="clause"><p><strong>(a)</strong> que TopEstrellas suprima los Datos;</p>
+<p><strong>(b)</strong> que se los devuelva en un formato estructurado y de uso común (por ejemplo, CSV o JSON) y después los suprima; o</p>
+<p><strong>(c)</strong> que los entregue al proveedor que el Cliente indique y después los suprima.</p>
+</div>
+<p>El Cliente puede elegir desde ya y cambiar de opción antes del final. Si no elige en los 30 días siguientes al fin del encargo, TopEstrellas suprime los Datos.</p>
+<h3>18.5. Cómo se hace</h3>
+<ul>
+<li><strong>Devolución.</strong> Mientras tiene sus módulos activos, el Cliente puede descargar desde su Panel las exportaciones de la cláusula 13.3. El resto de los Datos, o todos si ya no tiene acceso, se los entrega TopEstrellas a petición suya, en el plazo de la cláusula 24.3 de las Condiciones Generales y antes de suprimirlos.</li>
+<li><strong>Supresión.</strong> La hace el personal de TopEstrellas; el Cliente no puede lanzarla desde su Panel. Primero se marca el negocio como borrado y se cancela su suscripción. Durante 30 días el negocio se puede restaurar. Pasado ese plazo, una tarea automática borra todos sus Datos: fichas, reservas, pedidos, citas, opiniones, contactos, avisos, conversaciones con la inteligencia artificial, campañas, equipo, ficheros y analítica. Si el Cliente lo pide, TopEstrellas puede hacer el borrado definitivo en el momento.</li>
+<li><strong>Sin vuelta atrás.</strong> El borrado definitivo no se puede deshacer, y el proceso de borrado no guarda ninguna copia de los Datos. Queda, durante 90 días, una constancia del borrado con identificadores internos y el nombre comercial del negocio, sin datos de contacto, NIF ni datos de facturación.</li>
+<li><strong>Lo que no se borra con el negocio.</strong> Las facturas y los cobros, que se conservan durante su plazo legal (cláusula 18.7), y la constancia de los pagos de las reservas, de la que los datos personales se retiran en los plazos de los cobros (Anexo A.8).</li>
+</ul>
+<h3>18.6. Confirmación</h3>
+<p>TopEstrellas confirma por escrito al Cliente, en los 15 días siguientes a la supresión, que ha suprimido los Datos y en qué fecha.</p>
+<h3>18.7. Conservación por obligación legal</h3>
+<p>Si una ley obliga a conservar algún dato (por ejemplo, las facturas que el Cliente emitió a sus clientes a través de la plataforma), TopEstrellas lo conserva por cuenta del Cliente, bloqueado y solo para cumplir esa obligación, mientras dure. El Cliente puede pedir una copia en cualquier momento.</p>
+<p>TopEstrellas también puede conservar bloqueados los Datos necesarios mientras puedan derivarse responsabilidades de su relación con el Cliente (artículo 33.4 de la LOPDGDD).</p>
+<h3>18.8. Continuidad</h3>
+<p>Mientras TopEstrellas conserve Datos del Cliente, este contrato se sigue aplicando.</p>
+</div>
+<div class="section" id="s19"><h2>19. Responsabilidad: cada parte de lo suyo</h2>
+<h3>19.1. Reparto</h3>
+<p>Cada parte responde de sus propias obligaciones, como establece el artículo 82 del RGPD.</p>
+<p><strong>TopEstrellas responde ante el Cliente</strong> de:</p>
+<ul>
+<li>incumplir este contrato o las obligaciones que el RGPD impone a los encargados del tratamiento;</li>
+<li>salirse de las instrucciones del Cliente;</li>
+<li>usar los Datos para fines propios;</li>
+<li>lo que hagan sus subencargados.</li>
+</ul>
+<p><strong>El Cliente responde ante TopEstrellas</strong> de:</p>
+<ul>
+<li>sus obligaciones como responsable: la base jurídica, la información a sus clientes, la atención de sus derechos, sus comunicaciones comerciales y sus decisiones sobre los Datos;</li>
+<li>lo que haga su equipo o quien entre con sus credenciales;</li>
+<li>lo que haga con los Datos fuera de la plataforma;</li>
+<li>las instrucciones contrarias a la ley que mantenga después del aviso de TopEstrellas.</li>
+</ul>
+<h3>19.2. Repetición</h3>
+<p>Si una parte paga a un Interesado una indemnización que corresponde, en todo o en parte, a la otra, puede reclamarle esa parte (artículo 82.5 del RGPD), con el procedimiento de la cláusula 28.5 de las Condiciones Generales.</p>
+<h3>19.3. Los Interesados no quedan afectados</h3>
+<p>Nada de este contrato limita los derechos de los Interesados ni lo que pueden reclamar a cualquiera de las partes.</p>
+<h3>19.4. Multas</h3>
+<p>Cada parte paga sus propias multas.</p>
+<h3>19.5. Lo que nunca se limita</h3>
+<p>No se limita ni se excluye la responsabilidad:</p>
+<ul>
+<li>por dolo;</li>
+<li>por actos intencionados o negligencia grave en las obligaciones de este contrato;</li>
+<li>por usar los Datos para fines propios;</li>
+<li>por impedir al Cliente usar sus Datos mientras dure el contrato u obtener una copia al terminar.</li>
+</ul>
+<h3>19.6. Límites entre las partes</h3>
+<p>Fuera de esos casos, el reparto económico entre las partes, el límite de cantidad, el plazo para reclamar entre ellas y las indemnizaciones entre ellas son los de las cláusulas 28 y 29 de las Condiciones Generales.</p>
+</div>
+<div class="section" id="s20"><h2>20. Prevalencia, cambios y aceptación</h2>
+<h3>20.1. Prevalencia</h3>
+<p>En protección de datos, este contrato prevalece sobre las Condiciones Generales, las políticas de TopEstrellas y cualquier otro acuerdo entre las partes, incluido el apartado sobre el encargo del tratamiento de las condiciones de activación de cobros.</p>
+<h3>20.2. Lo que sustituye</h3>
+<p>Este contrato sustituye, en todo lo que afecta a los Datos, a lo que decían las cláusulas 20, 23.4 y 24 de la versión 1.0.0 de las Condiciones Generales.</p>
+<h3>20.3. Cambios</h3>
+<ul>
+<li>TopEstrellas comunicará directamente al Cliente cualquier cambio de este contrato o de sus anexos, por correo al canal oficial y con 30 días de antelación, con el texto nuevo y el motivo. Publicarlo en la web no basta.</li>
+<li>El cambio necesita la aprobación expresa del Cliente, que puede darla o negarla respondiendo por escrito al aviso. Mientras no lo apruebe, sigue vigente la versión que aceptó. Si TopEstrellas no puede mantenerla, el Cliente puede resolver el contrato sin coste y recuperar la parte pagada del periodo que no haya disfrutado.</li>
+<li>No necesitan aprobación los cambios que no tocan los elementos esenciales del tratamiento (qué datos, para qué, durante cuánto tiempo y a quién se comunican) y no rebajan la protección; por ejemplo, una mejora de seguridad o la corrección de unos datos de contacto. TopEstrellas los documenta y los pone a disposición del Cliente.</li>
+<li>Los cambios de subencargados siguen la cláusula 11.</li>
+</ul>
+<h3>20.4. Aceptación</h3>
+<p>El Cliente acepta este contrato al contratar el servicio, junto con las Condiciones Generales, de las que forma parte (cláusula 4.2 de las Condiciones Generales). Los Clientes que contrataron antes del 18 de octubre de 2026 lo aceptan como indica la cláusula 37.6 de las Condiciones Generales. El Cliente puede leer, descargar e imprimir este contrato en cualquier momento.</p>
+<h3>20.5. Versiones</h3>
+<p>TopEstrellas mantiene publicada la versión vigente de este contrato y conserva cada versión anterior, con su fecha.</p>
+</div>
+<div class="section" id="s21"><h2>21. Ley aplicable y jurisdicción</h2>
+<p>Este contrato se rige por la ley española. Para cualquier controversia se aplica la cláusula 34 de las Condiciones Generales.</p>
+</div>
+<div class="section" id="anexo-a"><h2>Anexo A. Descripción del tratamiento</h2>
+<h3>A.0. Para todos los módulos</h3>
+<ul>
+<li><strong>Objeto:</strong> prestar al Cliente los módulos de TopEstrellas que tenga activos.</li>
+<li><strong>Naturaleza:</strong> por cuenta del Cliente, TopEstrellas recoge, registra, organiza y conserva los Datos; los consulta y se los muestra al Cliente; envía comunicaciones en su nombre; cobra y factura en su nombre; los exporta cuando el Cliente lo pide; y los suprime.</li>
+<li><strong>Duración:</strong> la de la cláusula 18. Cada dato tiene, además, su plazo en los apartados siguientes.</li>
+<li><strong>Interesados en general:</strong> los clientes del Cliente; los visitantes de sus páginas públicas; la persona para quien se pide una cita; el personal del Cliente que usa el Panel; y los proveedores del Cliente que figuran en sus facturas de gasto.</li>
+<li><strong>Separación entre negocios:</strong> todo se guarda separado por negocio y ningún negocio ve los datos de otro. La cuenta de un cliente es de cada negocio: la misma persona tiene una ficha distinta en cada negocio y, si se registra en dos, tiene dos cuentas con contraseñas distintas.</li>
+</ul>
+<h3>A.1. Ficha de cliente y cuenta en la web del Cliente</h3>
+<ul>
+<li><strong>Interesados:</strong> los clientes del Cliente que reservan, hacen pedidos, piden cita, dejan una opinión o se registran en su web.</li>
+<li><strong>Datos:</strong> nombre, correo y teléfono; direcciones de entrega (alias, calle, ciudad, código postal, provincia, país, piso, indicaciones y, si las hay, coordenadas); datos de factura (nombre o razón social, NIF, dirección y correo de factura); la contraseña, guardada como huella irreversible, si tiene cuenta; si entra con Google, el identificador, el correo, el nombre y la foto de esa cuenta; y el idioma, si quiere ofertas, la fecha de su última reserva, el origen del contacto y el estado de su acceso.</li>
+<li><strong>Datos que se añaden en Citas:</strong> «Alergias y avisos» (dato de salud, hasta 150 caracteres), una nota interna, el cumpleaños y etiquetas.</li>
+<li><strong>Finalidad:</strong> identificar al cliente en el negocio, permitirle reservar, hacer pedidos y pedir cita con su cuenta, y que el Cliente gestione su relación con él.</li>
+<li><strong>Sesión:</strong> la sesión de la cuenta dura 1 año y solo vale en la web de ese negocio.</li>
+<li><strong>Conservación:</strong> sin plazo automático. La ficha se conserva hasta que el Cliente la borra (cláusula 13.3), TopEstrellas la borra a petición del Cliente (cláusula 13.4) o se borra el negocio.</li>
+</ul>
+<h3>A.2. Reservas de mesa</h3>
+<ul>
+<li><strong>Canales:</strong> las páginas públicas del Cliente, el recuadro en su propia web y las reservas que su personal apunta por teléfono o en persona.</li>
+<li><strong>Interesados:</strong> quien reserva y, en lo que toca a las alergias y a la movilidad, las personas del grupo. Por lo demás, los acompañantes, los niños y las tronas solo cuentan como número.</li>
+<li><strong>Datos:</strong> copia del nombre, el teléfono y el correo, y enlace a la ficha; día, hora, comensales, niños, tronas, zona, mesa y estado; los alérgenos (lista cerrada de 14), «otra alergia» (hasta 160 caracteres) y la movilidad reducida; las observaciones (texto libre, hasta 500 caracteres); las etiquetas de mesa pedidas; la constancia de las casillas (fecha, huella del texto aceptado, si quiere ofertas y quién marcó la casilla); el canal y si se reservó con cuenta o como invitado; y el historial de cambios, sin datos de la persona. No se guarda la dirección IP.</li>
+<li><strong>Reservas con pago o garantía:</strong> se guarda una copia de la reserva para el cobro.</li>
+<li><strong>Mesa guardada:</strong> mientras la persona reserva, la mesa se le guarda 15 minutos con una cookie de su navegador.</li>
+<li><strong>Finalidad:</strong> gestionar la reserva y atender al grupo teniendo en cuenta sus alergias y su movilidad. Si la persona marca la casilla de ofertas, también enviarle las ofertas del Cliente.</li>
+<li><strong>Conservación:</strong> la reserva completa, 5 años desde su hora de inicio; las alergias, «otra alergia» y la movilidad reducida, también en las copias para pagos y garantías, se borran 24 horas después de que termine la reserva (cláusula 10); y las peticiones de mesa «sin sitio», que no llevan nombre, teléfono ni alergias, 400 días.</li>
+</ul>
+<h3>A.3. Pedidos</h3>
+<ul>
+<li><strong>Interesados:</strong> quien hace el pedido y los comensales que añaden productos a la cesta compartida de una mesa.</li>
+<li><strong>Datos:</strong> nombre, teléfono, correo y dirección de entrega; notas, productos, importes, mesa, idioma y sesión de la mesa; datos del cobro y, si se pide factura completa, los datos fiscales; y, en la cesta compartida, el nombre que escribe cada comensal y lo que añade.</li>
+<li><strong>Finalidad:</strong> preparar, entregar, cobrar y facturar el pedido.</li>
+<li><strong>Conservación:</strong> los pedidos, 5 años desde su creación.</li>
+</ul>
+<h3>A.4. Citas</h3>
+<ul>
+<li><strong>Interesados:</strong> quien pide la cita y, si la pide para otra persona, esa persona.</li>
+<li><strong>Datos:</strong> nombre, correo, teléfono e idioma; si quiere ofertas y si la cita es para otra persona; las notas libres de la persona, de hasta 500 caracteres («¿Algo que debamos saber?»), y las notas internas que apunte el Cliente; el servicio, los extras y el profesional; y el cobro y la garantía con tarjeta, con la prueba de lo aceptado (texto, huella, fecha, dirección IP y navegador).</li>
+<li><strong>Marcas del Cliente:</strong> un semáforo que el Cliente fija a mano y la marca «No puede reservar online».</li>
+<li><strong>Fiabilidad:</strong> se calcula al consultarla, con las ausencias, las cancelaciones tardías y los cambios de hora que pidió la persona entre sus últimas 10 citas del último año en ese negocio. Solo la ve el Cliente. Es informativa: el bloqueo para reservar en línea lo pone a mano una persona del equipo del Cliente.</li>
+<li><strong>Asistente de citas:</strong> se guarda la conversación de la persona con el asistente de inteligencia artificial, que puede incluir su nombre, su teléfono, su correo y lo que cuente. Si dicta, su voz se envía a Deepgram para convertirla en texto.</li>
+<li><strong>Finalidad:</strong> gestionar la cita, recordarla antes y, si el Cliente lo activa, invitar a dejar una reseña después; cobrar las garantías que fije el Cliente; y atender a la persona con el asistente.</li>
+<li><strong>Conservación:</strong> las citas, 5 años desde su creación; las solicitudes de cita que el Cliente ya aceptó o rechazó, 90 días desde la decisión; y las marcas y las «Alergias y avisos», sin plazo automático, con la ficha.</li>
+</ul>
+<h3>A.5. Opiniones, contactos y promociones (Rasca y Gana y sorteos)</h3>
+<ul>
+<li><strong>Interesados:</strong> quien deja una opinión o participa en una promoción.</li>
+<li><strong>Datos:</strong> nombre, correo, teléfono e idioma; la valoración y el texto de la opinión, la mesa o la zona, la fecha y el origen; la participación, el premio y los datos de contacto para entregarlo; y la dirección IP completa y el navegador desde los que se envía la opinión o se participa.</li>
+<li><strong>Contactos:</strong> los datos de contacto que se dejan en las opiniones y en las promociones forman la lista de contactos del Cliente, que se guarda con una copia interna.</li>
+<li><strong>Finalidad:</strong> recoger las opiniones del Cliente, gestionar sus promociones y entregar los premios, y comprobar que el correo existe.</li>
+<li><strong>Conservación:</strong> las opiniones y las participaciones en Rasca y Gana y en sorteos, que se guardan juntas, y la lista de contactos con su copia no tienen plazo automático: se conservan hasta que se borra el negocio o TopEstrellas las borra a petición del Cliente (cláusula 13.4).</li>
+</ul>
+<h3>A.6. Comunicaciones: correos y avisos push</h3>
+<ul>
+<li><strong>Interesados:</strong> los destinatarios de los correos y de los avisos del Cliente.</li>
+<li><strong>Datos:</strong> correo, nombre e idioma; las aperturas y los clics de las campañas; los avisos de entrega, rebote y queja; y, para los avisos push, la dirección de la suscripción del navegador con sus claves y el buzón de avisos del cliente.</li>
+<li><strong>Correos que salen por cuenta del Cliente:</strong> los de reservas, pedidos y citas; los de premios; las invitaciones a crear una cuenta que decida el Cliente; y las campañas que el Cliente prepare y lance.</li>
+<li><strong>Remitente:</strong> los correos de reservas, pedidos, citas y campañas llevan el nombre del negocio como remitente y salen desde una dirección de la plataforma. Las respuestas van al correo de contacto del Cliente, si lo ha indicado; en las campañas, van primero al correo de la cuenta del titular.</li>
+<li><strong>Destinatarios de las campañas:</strong> los contactos del apartado A.5, que el Cliente puede filtrar por idioma y por fechas. La plataforma no filtra los destinatarios por ninguna marca de consentimiento, y la casilla de ofertas de las reservas se guarda pero no se usa para elegirlos. Los correos de campaña no llevan un enlace de baja automático (cláusula 7.1).</li>
+<li><strong>Finalidad:</strong> enviar las comunicaciones del servicio y las campañas del Cliente, y comprobar que llegan.</li>
+<li><strong>Conservación:</strong> el contenido de los correos enviados, 7 días; los avisos de entrega, rebote y queja, 90 días; el registro de cada envío de campaña (a quién, si lo abrió y si pulsó un enlace), sin plazo automático, hasta que se borra el negocio; el buzón de avisos del cliente, 1 año; y el registro de envíos de avisos push, 90 días.</li>
+</ul>
+<h3>A.7. Analítica de las páginas públicas del Cliente</h3>
+<ul>
+<li><strong>Interesados:</strong> los visitantes de las páginas públicas del Cliente.</li>
+<li><strong>Datos:</strong> las páginas vistas, los productos y las categorías consultados, lo que se añade al pedido y hasta dónde se lee cada página; el idioma y la dirección IP recortada (con su último bloque a cero); el país, la región y la ciudad aproximados; el navegador, el sistema y el tipo de aparato; y el identificador de la ficha, si la persona ha iniciado sesión.</li>
+<li><strong>Perfil de visitante, por negocio:</strong> los identificadores del navegador y de la ficha, el idioma, si instaló la aplicación y si aceptó los avisos push, el número de visitas y las fechas de la primera y de la última.</li>
+<li><strong>Cookie:</strong> una cookie propia de analítica, que dura 180 días.</li>
+<li><strong>Dónde se recoge:</strong> en todas las páginas públicas del Cliente, tenga o no activo el módulo de analítica. El Cliente ve las estadísticas en su Panel cuando tiene el módulo activo.</li>
+<li><strong>Finalidad:</strong> dar al Cliente las estadísticas de sus páginas.</li>
+<li><strong>Conservación:</strong> los eventos, 90 días; las sesiones, 30 días; las métricas por hora, 180 días; y el perfil de visitante, las métricas diarias y el embudo de productos, sin plazo automático, hasta que se borra el negocio o TopEstrellas los borra a petición del Cliente (cláusula 13.4).</li>
+</ul>
+<h3>A.8. Cobros y facturas a los clientes del Cliente</h3>
+<ul>
+<li><strong>Interesados:</strong> los clientes del Cliente que pagan o piden factura.</li>
+<li><strong>Datos:</strong> las facturas simplificadas y completas que emite el Cliente (en las completas, el NIF y el domicilio de su cliente); los cobros; y el perfil de pago: la referencia del cliente en la cuenta de Stripe del Cliente, si aceptó «Guardar mi tarjeta» y la última dirección IP desde la que pagó.</li>
+<li><strong>Tarjetas:</strong> TopEstrellas no guarda números de tarjeta. El Cliente y TopEstrellas solo ven la marca y los cuatro últimos números.</li>
+<li><strong>Finalidad:</strong> cobrar por cuenta del Cliente; expedir sus facturas en su nombre, como ya prevén las condiciones de activación de cobros; y enviar sus registros de facturación a la Agencia Tributaria (VeriFactu) o a las haciendas forales (TicketBAI).</li>
+<li><strong>Conservación:</strong> las facturas, 6 años desde el 31 de diciembre del ejercicio, o más si hay una causa legal; y los datos personales de los cobros (el correo de quien paga, el destinatario fiscal y la referencia del cliente), 4 años desde que se cierra el cobro, o 12 meses si no se llegó a cobrar (un intento fallido o caducado, o una garantía liberada).</li>
+</ul>
+<h3>A.9. Asistentes de inteligencia artificial y buscador de la carta</h3>
+<ul>
+<li><strong>Asistente del Panel:</strong> cuando el personal del Cliente le pregunta, hace consultas de solo lectura sobre los datos del negocio (pedidos, opiniones, contactos, citas, participaciones, campañas y registros de actividad, entre otros), siempre limitadas a ese negocio y a 50 resultados. No puede consultar las reservas de mesa. El resultado se envía al modelo de inteligencia artificial para contestar. En los negocios con Citas, también gestiona citas y fichas de clientes cuando el personal se lo pide. La conversación se borra 72 horas después de la última actividad.</li>
+<li><strong>Asistente de citas:</strong> ver el apartado A.4.</li>
+<li><strong>Buscador de la carta:</strong> la búsqueda que escribe el visitante se envía a modelos de inteligencia artificial para entenderla y a Voyage AI para buscar por significado. No se guarda asociada a la persona: solo se cuenta cuántas veces se busca cada término cada día.</li>
+<li><strong>Finalidad:</strong> contestar al Cliente y atender a sus clientes.</li>
+</ul>
+<h3>A.10. Soporte</h3>
+<ul>
+<li><strong>Qué se hace:</strong> el personal de TopEstrellas puede entrar en el Panel del Cliente para ayudarle, y cada entrada queda registrada (cláusula 8.2).</li>
+<li><strong>Finalidad:</strong> resolver las dudas y las incidencias del Cliente.</li>
+</ul>
+<h3>A.11. Compras y gastos</h3>
+<ul>
+<li><strong>Interesados:</strong> los proveedores del Cliente que sean personas físicas, y sus contactos.</li>
+<li><strong>Datos:</strong> los que figuran en las facturas de gasto que sube el Cliente: nombre, NIF, dirección e importes.</li>
+<li><strong>Operaciones:</strong> las facturas se leen con Google Document AI y un modelo de inteligencia artificial extrae sus datos (en primer lugar, DeepSeek). El Cliente revisa la propuesta antes de guardarla.</li>
+<li><strong>Finalidad:</strong> llevar el registro de las compras y los gastos del Cliente.</li>
+</ul>
+<h3>A.12. Personal del Cliente</h3>
+<ul>
+<li><strong>Interesados:</strong> las personas del equipo del Cliente que usan el Panel y, en Citas, sus profesionales.</li>
+<li><strong>Datos:</strong> nombre y correo, permisos e historial de permisos; las invitaciones al equipo; y, en Citas, los horarios y las vacaciones pedidas, con la nota de quien las pide y, si se rechazan, el motivo.</li>
+<li><strong>Finalidad:</strong> dar acceso al Panel con los permisos que decide el Cliente y organizar la agenda.</li>
+<li><strong>Conservación:</strong> la cuenta de cada persona dura lo que dura su acceso; las invitaciones se borran 7 días después de caducar; y las vacaciones pedidas, 12 meses después de su último día.</li>
+</ul>
+</div>
+<div class="section" id="anexo-b"><h2>Anexo B. Instrucciones documentadas: lo que TopEstrellas hace por cuenta del Cliente</h2>
+<p>Este anexo es la instrucción documentada principal del Cliente (cláusula 5.1).</p>
+<h3>B.1. En todos los módulos</h3>
+<p>TopEstrellas:</p>
+<ol>
+<li>Guarda los Datos en la plataforma, separados por negocio, y se los muestra al equipo del Cliente según los permisos que este da.</li>
+<li>Aplica los plazos de conservación del Anexo A.</li>
+<li>Protege los Datos con las medidas del Anexo C.</li>
+<li>Usa los subencargados del Anexo D.</li>
+<li>Da soporte al Cliente y entra en su Panel cuando hace falta, dejando registro (cláusula 8).</li>
+<li>Muestra en los formularios, por cuenta del Cliente, los textos legales del apartado B.3.</li>
+</ol>
+<h3>B.2. Módulo a módulo</h3>
+<p><strong>Carta y páginas públicas</strong></p>
+<ul>
+<li>Publica la web del Cliente en su subdominio de localestrella.com o en su dominio propio, y el recuadro que el Cliente incrusta en su web.</li>
+<li>Mide las visitas para el Cliente (Anexo A.7).</li>
+</ul>
+<p><strong>Reservas</strong></p>
+<ul>
+<li>Recibe las reservas de las páginas públicas y del recuadro, y deja que el personal del Cliente apunte las que llegan por teléfono o en persona.</li>
+<li>Guarda la mesa 15 minutos mientras la persona reserva.</li>
+<li>Muestra las reservas en la pantalla de sala en tiempo real; los avisos en vivo solo llevan identificadores.</li>
+<li>Envía al cliente los correos de su reserva: la confirmación y los cambios o cancelaciones.</li>
+<li>Imprime avisos de reserva en la impresora del Cliente, sin teléfono, correo, alergias ni observaciones.</li>
+<li>Guarda la constancia de las casillas y enlaza la reserva con la ficha del cliente.</li>
+<li>Borra los datos de salud a las 24 horas (cláusula 10).</li>
+</ul>
+<p><strong>Pedidos</strong></p>
+<ul>
+<li>Recibe los pedidos, se los muestra al Cliente y los envía a su impresora.</li>
+<li>Da al cliente un seguimiento del pedido en tiempo real, con una vista sin datos sensibles.</li>
+<li>Le envía el correo del pedido.</li>
+<li>Cobra en la cuenta de Stripe del Cliente y expide la factura en su nombre.</li>
+</ul>
+<p><strong>Citas</strong></p>
+<ul>
+<li>Reserva, cambia y cancela citas.</li>
+<li>Envía los recordatorios y, si el Cliente lo activa, la invitación a dejar una reseña.</li>
+<li>Atiende al cliente con el asistente de inteligencia artificial y el dictado por voz.</li>
+<li>Calcula la fiabilidad y aplica las marcas que fija el Cliente.</li>
+<li>Cobra las garantías en la cuenta de Stripe del Cliente.</li>
+</ul>
+<p><strong>Clientes</strong></p>
+<ul>
+<li>Crea y actualiza las fichas.</li>
+<li>Mantiene las cuentas de cada negocio, incluido el inicio de sesión con Google.</li>
+<li>Envía las invitaciones a crear una cuenta que decida el Cliente.</li>
+<li>Hace las exportaciones, importaciones y borrados que pida el Cliente.</li>
+</ul>
+<p><strong>Opiniones y promociones</strong></p>
+<ul>
+<li>Recoge las opiniones y las participaciones.</li>
+<li>Comprueba los correos con EmailListVerify.</li>
+<li>Envía los correos de los premios.</li>
+</ul>
+<p><strong>Comunicaciones</strong></p>
+<ul>
+<li>Envía las campañas de correo que el Cliente prepare y lance, con seguimiento de aperturas y clics.</li>
+<li>Envía los avisos push que el Cliente lance.</li>
+</ul>
+<p><strong>Cobros y facturas</strong></p>
+<ul>
+<li>Emite facturas y comprobantes en nombre del Cliente, los envía a VeriFactu o TicketBAI a través de Verifacti y guarda sus PDF y XML.</li>
+</ul>
+<p><strong>Asistentes de inteligencia artificial</strong></p>
+<ul>
+<li>Contesta al personal del Cliente con los datos de su negocio y atiende a sus clientes en Citas.</li>
+</ul>
+<p><strong>Compras y gastos</strong></p>
+<ul>
+<li>Lee las facturas de gasto que sube el Cliente (Anexo A.11).</li>
+</ul>
+<h3>B.3. Configuración común que el Cliente aprueba (cláusula 5.2)</h3>
+<ul>
+<li><strong>Plazos de conservación:</strong> los del Anexo A.</li>
+<li><strong>Subencargados:</strong> los del Anexo D.</li>
+<li><strong>Orden de los proveedores de inteligencia artificial de texto</strong> en el asistente de citas, el asistente del Panel y la lectura de facturas de gasto: DeepSeek, después Google Gemini y después OpenAI.</li>
+<li><strong>Buscador de la carta:</strong> Google Gemini en primer lugar.</li>
+<li><strong>Recomendaciones y búsqueda por significado:</strong> Anthropic en primer lugar, con Voyage AI para los vectores.</li>
+<li><strong>Cambios de orden:</strong> TopEstrellas puede cambiar el orden entre los proveedores del Anexo D sin seguir la cláusula 20, porque todos están ya autorizados. Para añadir o sustituir un proveedor se aplica la cláusula 11.</li>
+<li><strong>Ubicación de Google Gemini:</strong> «global» (cláusula 12.1).</li>
+<li><strong>Formulario de reserva:</strong> debajo del botón «Reservar», la información básica de protección de datos (responsable, con el nombre del titular y el del local; finalidad; legitimación; destinatarios; y derechos); la casilla obligatoria «He leído y acepto la política de privacidad»; y la casilla para recibir ofertas del negocio, que sale sin marcar. Las alergias y la movilidad no llevan una casilla aparte.</li>
+<li><strong>Enlaces «Ver más» y casilla de privacidad:</strong> abren el texto común de la política de privacidad para los clientes de los negocios, que el Cliente adopta como su información (cláusula 7.1).</li>
+<li><strong>Remitente de los correos:</strong> el nombre del negocio, con las respuestas a su correo de contacto y el envío desde una dirección de la plataforma (Anexo A.6).</li>
+<li><strong>Analítica:</strong> en todas las páginas públicas del Cliente (Anexo A.7).</li>
+<li><strong>Sesión de las cuentas de los clientes del Cliente:</strong> 1 año.</li>
+<li><strong>Longitud mínima de las contraseñas:</strong> 6 caracteres.</li>
+</ul>
+<h3>B.4. Lo que decide el Cliente en su Panel</h3>
+<ul>
+<li>Qué módulos activa.</li>
+<li>Qué pide el formulario de reservas: si el correo es obligatorio u opcional, si pregunta por niños, si pregunta por alergias y movilidad, y si ofrece la casilla de ofertas. Por defecto, el correo es obligatorio y las otras tres opciones están activadas; la casilla de ofertas sale siempre sin marcar.</li>
+<li>A quién envía campañas, qué dicen y qué avisos push manda.</li>
+<li>Qué apunta en las fichas: notas, «Alergias y avisos», cumpleaños y etiquetas.</li>
+<li>Las marcas y la sensibilidad del semáforo de fiabilidad, y si bloquea a alguien para reservar en línea.</li>
+<li>Qué exporta, importa, corrige o borra.</li>
+<li>Los premios, los sorteos y el recorrido de las opiniones.</li>
+<li>Sus políticas de cancelación, garantías y cobros.</li>
+<li>Quién de su equipo entra en el Panel y con qué permisos.</li>
+<li>Si usa el asistente de inteligencia artificial del Panel.</li>
+</ul>
+<p>Llamar o escribir por WhatsApp a sus clientes desde su propio teléfono lo hace el Cliente fuera de la plataforma: TopEstrellas solo le da el enlace.</p>
+<h3>B.5. Lo que TopEstrellas no hace</h3>
+<p>Lo que prohíbe la cláusula 6: enviar con los Datos comunicaciones comerciales propias o de terceros, cruzar datos entre negocios, vender o ceder los Datos, entrenar modelos de inteligencia artificial con ellos y sacar estadísticas para sí.</p>
+</div>
+<div class="section" id="anexo-c"><h2>Anexo C. Medidas técnicas y organizativas</h2>
+<h3>C.1. Comunicaciones, red y disponibilidad</h3>
+<ul>
+<li>Todo el tráfico va cifrado: HTTPS obligatorio, con HSTS de un año que incluye los subdominios.</li>
+<li>Dos servidores de producción con reparto de carga.</li>
+</ul>
+<h3>C.2. Identificación y control de acceso</h3>
+<ul>
+<li>Las contraseñas se guardan como huella irreversible (bcrypt), nunca en claro.</li>
+<li>Las sesiones van firmadas en cookies protegidas: solo las lee el servidor, solo viajan por conexión segura y van ligadas a la web de cada negocio. Las sesiones se pueden revocar.</li>
+<li>Límites de intentos de acceso al Panel por cuenta (20 por hora) y por correo y dirección IP.</li>
+<li>Aislamiento por negocio en cada consulta. Cada ruta del Panel comprueba el acceso al negocio y que el módulo esté activo.</li>
+<li>Permisos por persona del equipo del Cliente, con historial de quién concedió qué.</li>
+<li>Registro de cada entrada del personal de soporte de TopEstrellas en el Panel del Cliente.</li>
+<li>Registros de auditoría y de errores, que se conservan 400 y 90 días, respectivamente.</li>
+</ul>
+<h3>C.3. Frenos y minimización</h3>
+<ul>
+<li>Límites de peticiones por dirección IP y por cuenta, comprobación del origen de las peticiones que escriben datos y validación estricta de lo que llega.</li>
+<li>Los correos, los teléfonos, los NIF y los IBAN se ocultan automáticamente en los registros técnicos y en las colas de trabajo.</li>
+<li>En la analítica, la dirección IP se recorta antes de guardarla, y una comprobación periódica vigila que no quede ninguna completa.</li>
+<li>Los avisos en tiempo real de la pantalla de sala solo llevan identificadores, y el seguimiento del pedido publica una vista sin datos sensibles.</li>
+<li>Los tickets de impresión pasan por una cola que caduca en 24 horas, y los avisos de reserva impresos no llevan teléfono, correo, alergias ni observaciones.</li>
+<li>El identificador interno del cliente no se envía a Stripe.</li>
+<li>Las direcciones y las claves de las suscripciones push nunca se escriben en los registros.</li>
+<li>TopEstrellas no guarda números de tarjeta: los trata Stripe.</li>
+</ul>
+<h3>C.4. Conservación, supresión e integridad</h3>
+<ul>
+<li>Plazos automáticos de conservación por tipo de dato (Anexo A) y borrado de los datos de salud de las reservas a las 24 horas, cubierto por pruebas automáticas.</li>
+<li>Borrado en cascada del negocio, que no se puede deshacer y no guarda ninguna copia de los Datos (cláusula 18.5).</li>
+<li>Las facturas, con sus PDF y XML, se guardan con bloqueo de escritura hasta el final de su plazo legal. Si el almacén no acepta el bloqueo, no se guardan.</li>
+</ul>
+<h3>C.5. Datos de salud</h3>
+<p>Las garantías de la cláusula 10.2.</p>
+<h3>C.6. Medidas organizativas</h3>
+<ul>
+<li>Acceso del personal de TopEstrellas a los Datos solo para dar soporte, resolver incidencias o proteger la plataforma, con deber de confidencialidad (cláusula 8).</li>
+<li>Procedimiento escrito para responder a las violaciones de seguridad.</li>
+<li>Revisión de las medidas al menos una vez al año y después de cada incidente (cláusula 9).</li>
+</ul>
+</div>
+<div class="section" id="anexo-d"><h2>Anexo D. Subencargados</h2>
+<p>El Cliente autoriza estos subencargados (cláusula 11.1). Cada uno trata los Datos solo para lo que se indica.</p>
+<h3>D.1. Infraestructura y almacenamiento</h3>
+<ul>
+<li><strong>Hetzner Online GmbH:</strong> servidores de la plataforma, en la Unión Europea: los dos de la aplicación, en Alemania, y uno auxiliar para las colas de trabajo, la memoria temporal y los avisos en tiempo real. Trata todos los Datos mientras se procesan.</li>
+<li><strong>MongoDB Atlas:</strong> base de datos de la plataforma. Guarda todos los Datos.</li>
+<li><strong>Cloudflare:</strong> gestión de los dominios (DNS): indica al navegador a qué servidor conectarse. Las páginas y el Panel van directamente a los servidores de Hetzner, sin pasar por Cloudflare.</li>
+<li><strong>Bunny.net:</strong> red de entrega de las imágenes. Recibe la dirección IP y los datos del navegador de quien carga las fotos.</li>
+<li><strong>Backblaze (B2):</strong> almacén de ficheros: las fotos y los PDF y XML de las facturas que emite el Cliente, con los datos de sus clientes.</li>
+</ul>
+<h3>D.2. Comunicaciones</h3>
+<ul>
+<li><strong>Amazon Web Services (Amazon SES):</strong> envía los correos a los clientes del Cliente: reservas, pedidos, citas, premios, invitaciones y campañas. Recibe el correo, el nombre y el contenido de cada mensaje, y devuelve los avisos de entrega, rebote y queja.</li>
+<li><strong>EmailListVerify:</strong> comprueba que existe el correo que se da al dejar una opinión o al participar en Rasca y Gana. Recibe ese correo.</li>
+</ul>
+<h3>D.3. Facturación</h3>
+<ul>
+<li><strong>Verifacti:</strong> envía los registros de facturación del Cliente a la Agencia Tributaria (VeriFactu) o a las haciendas forales (TicketBAI) y devuelve los PDF de las facturas. Recibe los datos de las facturas; en las completas, el NIF y el domicilio del cliente.</li>
+</ul>
+<h3>D.4. Inteligencia artificial</h3>
+<ul>
+<li><strong>DeepSeek:</strong> modelo de inteligencia artificial de texto, el primero para el asistente de citas, el asistente del Panel y la lectura de facturas de gasto. Recibe los mensajes de los clientes al asistente de citas, los resultados de las consultas del asistente del Panel y el texto de las facturas de gasto. Puede recibir datos de salud en los casos de la cláusula 10.4. Sus condiciones no incluyen un contrato de encargo del tratamiento ni garantías para transferir los Datos fuera del EEE (cláusulas 11.5 y 12.3).</li>
+<li><strong>Google (Vertex AI, Gemini):</strong> modelo de inteligencia artificial de texto, el segundo para esos mismos usos y el primero en el buscador de la carta. Se usa en su ubicación «global» (cláusula 12.1). Recibe lo mismo que DeepSeek cuando actúa, y las búsquedas de la carta.</li>
+<li><strong>Google Cloud (Document AI):</strong> lee las facturas de gasto que sube el Cliente, en la Unión Europea. Recibe esas facturas, con los datos de sus proveedores.</li>
+<li><strong>OpenAI:</strong> modelo de inteligencia artificial de texto, de reserva de los anteriores. Recibe lo mismo que ellos cuando actúa.</li>
+<li><strong>Anthropic:</strong> modelo de inteligencia artificial que prepara las recomendaciones y la búsqueda por significado de la carta, y de reserva en el buscador. Recibe los textos de la carta y las búsquedas.</li>
+<li><strong>Voyage AI:</strong> convierte las búsquedas de la carta en vectores y ordena los resultados por significado. Recibe la búsqueda y los alérgenos que hay que excluir.</li>
+<li><strong>Deepgram:</strong> convierte en texto la voz que se dicta en el asistente de citas (la del cliente) y en el Panel (la del personal del Cliente). Recibe la voz, que el navegador le envía directamente.</li>
+</ul>
+<h3>D.5. Otros servicios que intervienen</h3>
+<ul>
+<li><strong>Stripe:</strong> los cobros, las tarjetas guardadas y las garantías se hacen en la cuenta de Stripe del propio Cliente, que tiene su propio contrato con Stripe. TopEstrellas opera esa cuenta por cuenta del Cliente a través de Stripe Connect.</li>
+<li><strong>Agencia Tributaria y haciendas forales:</strong> reciben los registros de facturación por obligación legal del Cliente (VeriFactu y TicketBAI).</li>
+<li><strong>Google Maps e inicio de sesión con Google:</strong> el mapa del local en la web del Cliente y el inicio de sesión con Google conectan el navegador del visitante directamente con Google.</li>
+<li><strong>Servicios de notificaciones de los navegadores:</strong> los avisos push los entrega el servicio del fabricante de cada navegador, que recibe la dirección de la suscripción y el aviso.</li>
+<li><strong>GitHub Pages:</strong> aloja los textos legales; el navegador los descarga de allí cuando se abren fuera del recuadro.</li>
+<li><strong>Meta:</strong> su píxel es un tratamiento propio de TopEstrellas (Anexo E).</li>
+</ul>
+</div>
+<div class="section" id="anexo-e"><h2>Anexo E. Lo que TopEstrellas trata como responsable</h2>
+<p>Esta es la lista cerrada de lo que TopEstrellas trata para sus propios fines con datos que pasan por las páginas públicas del Cliente. Queda fuera de este contrato: el Cliente no decide sobre estos tratamientos ni responde de ellos (cláusula 20.8 de las Condiciones Generales). TopEstrellas informa de ellos a los visitantes en la política de privacidad para los clientes de los negocios. Cualquier tratamiento propio nuevo tendrá que añadirse a esta lista, según la cláusula 20.</p>
+<h3>E.1. Píxel de Meta de TopEstrellas</h3>
+<ul>
+<li>TopEstrellas tiene un único píxel de Meta, que se carga en las páginas públicas de todos los negocios, en localestrella.com y en los dominios propios.</li>
+<li>No se carga en el recuadro que el Cliente incrusta en su web, ni en las páginas a las que se llega con un enlace personal recibido por correo (por ejemplo, la gestión de una reserva o de una cita, el seguimiento de un pedido o un enlace de pago).</li>
+<li>En las páginas de los negocios solo envía a Meta que se ha visto una página. La detección automática de eventos de Meta está desactivada.</li>
+<li>Su finalidad es medir las campañas de TopEstrellas y mostrar publicidad en Facebook e Instagram a quien ha visitado esas páginas.</li>
+</ul>
+<h3>E.2. Seguridad de la plataforma</h3>
+<p>Los registros técnicos y de seguridad, los frenos de peticiones por dirección IP, que son temporales, el control de los intentos de inicio de sesión y la prevención de abusos y fraudes. TopEstrellas los trata como responsable, por su interés legítimo en proteger la plataforma y a todos los negocios que la usan. Los intentos de inicio de sesión, con su dirección IP, se borran a los 7 días; los registros de errores, a los 90 días; y los de auditoría, a los 400 días.</p>
+<h3>E.3. Obligaciones legales propias</h3>
+<p>Lo que una ley exija directamente a TopEstrellas; por ejemplo, contestar a un requerimiento de una autoridad dirigido a ella. Si afecta a los Datos, TopEstrellas lo avisa antes al Cliente, salvo que la ley lo prohíba (cláusula 5.3).</p>
+</div>
+
+</main>
+
+
+</body>
+</html>
